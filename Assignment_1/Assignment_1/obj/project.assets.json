@@ -682,11 +682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ricky/Desktop/Assignment_1/Assignment_1/Assignment_1.csproj",
+      "projectUniqueName": "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/Assignment_1.csproj",
       "projectName": "Assignment_1",
-      "projectPath": "/Users/ricky/Desktop/Assignment_1/Assignment_1/Assignment_1.csproj",
+      "projectPath": "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/Assignment_1.csproj",
       "packagesPath": "/Users/ricky/.nuget/packages/",
-      "outputPath": "/Users/ricky/Desktop/Assignment_1/Assignment_1/obj/",
+      "outputPath": "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

@@ -6,7 +6,8 @@ namespace Assignment_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Linq demo 
+            Assignment_1.Linq.Tester.Test();
         }
     }
 }

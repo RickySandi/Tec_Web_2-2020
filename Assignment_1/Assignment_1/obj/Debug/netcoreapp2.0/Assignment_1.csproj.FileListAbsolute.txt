@@ -1,0 +1,12 @@
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/bin/Debug/netcoreapp2.0/Assignment_1.deps.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/bin/Debug/netcoreapp2.0/Assignment_1.runtimeconfig.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/bin/Debug/netcoreapp2.0/Assignment_1.runtimeconfig.dev.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/bin/Debug/netcoreapp2.0/Assignment_1.dll
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/bin/Debug/netcoreapp2.0/Assignment_1.pdb
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/obj/Debug/netcoreapp2.0/Assignment_1.csprojAssemblyReference.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/obj/Debug/netcoreapp2.0/Assignment_1.AssemblyInfoInputs.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/obj/Debug/netcoreapp2.0/Assignment_1.AssemblyInfo.cs
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/obj/Debug/netcoreapp2.0/Assignment_1.csproj.CoreCompileInputs.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/obj/Debug/netcoreapp2.0/Assignment_1.dll
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/obj/Debug/netcoreapp2.0/Assignment_1.pdb
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_1/Assignment_1/obj/Debug/netcoreapp2.0/Assignment_1.genruntimeconfig.cache
