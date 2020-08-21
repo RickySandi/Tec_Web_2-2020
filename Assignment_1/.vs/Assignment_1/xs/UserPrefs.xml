@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{33C7FF54-DA8A-4496-B4D1-E9BBB553BA22}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/general_classes/SoccerPlayer.cs">
+    <Files>
+      <File FileName="Assignment_1/Program.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/general_classes/Athlete.cs" Line="17" Column="1" />
+      <File FileName="Assignment_1/general_classes/Runner.cs" Line="11" Column="10" />
+      <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" Line="14" Column="1" />
+      <File FileName="Assignment_1/Linq.cs" Line="25" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assignment_1" expanded="True">
+            <Node name="Assignment_1" expanded="True">
+              <Node name="general_classes" expanded="True">
+                <Node name="SoccerPlayer.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assignment__1 FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
