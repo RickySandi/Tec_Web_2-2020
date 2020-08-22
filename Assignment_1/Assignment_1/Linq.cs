@@ -14,6 +14,7 @@ namespace Assignment_1.Linq
             var registeredRunners = PopulateRunners();
             var registeredSoccerPlayers = PopulateSoccerPlayers();
 
+            /*
             foreach (var runner in registeredRunners)
             {
                 Console.WriteLine(runner.GetInfo());
@@ -35,11 +36,28 @@ namespace Assignment_1.Linq
             //soccerPlayers by age
             var soccerPlayersByAge = from element in registeredSoccerPlayers
                                      group element by element.AthleteAge;
+            */
 
             //Runners filter by age criteria
 
             var runnersLessThan30 = registeredRunners.Where(e => e.AthleteAge < 30); //debug
+
+             foreach(var runner in runnersLessThan30)
+             {
+
+                Console.WriteLine(runner.GetInfo()); 
+             }
+
+            
+
             var runnersBetween10And20 = registeredRunners.Where(e => e.AthleteAge >= 10 && e.AthleteAge <= 20); //debug
+
+
+            foreach (var runner in runnersLessThan30)
+            {
+
+                Console.WriteLine(runner.GetInfo());
+            }
 
             //Soccer Players filter by age criteria
 
