@@ -1,14 +1,20 @@
 ﻿<Properties StartupConfiguration="{33C7FF54-DA8A-4496-B4D1-E9BBB553BA22}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/general_classes/Generics.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/general_classes/Athlete.cs">
     <Files>
-      <File FileName="Assignment_1/Program.cs" Line="11" Column="15" />
+      <File FileName="Assignment_1/Program.cs" Line="21" Column="43" IsPinned="True" />
       <File FileName="Assignment_1/general_classes/Athlete.cs" Line="8" Column="30" />
       <File FileName="Assignment_1/general_classes/Runner.cs" Line="12" Column="9" />
-      <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" Line="14" Column="1" />
-      <File FileName="Assignment_1/Linq.cs" Line="31" Column="1" />
-      <File FileName="Assignment_1/Institution.cs" Line="17" Column="41" />
-      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" Line="36" Column="63" />
+      <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/Linq.cs" Line="19" Column="14" />
+      <File FileName="Assignment_1/Interfaces/ManagedAthleteInfo.cs" Line="6" Column="36" />
+      <File FileName="Assignment_1/Interfaces/ManagementAgency.cs" Line="10" Column="22" />
+      <File FileName="Assignment_1/Interfaces/SoccerSportGroupAgency.cs" Line="12" Column="1" />
+      <File FileName="Assignment_1/Interfaces/IManagementAgency.cs" Line="17" Column="1" />
+      <File FileName="Assignment_1/Interfaces/AlwaysRunningAgency.cs" Line="9" Column="9" />
       <File FileName="Assignment_1/general_classes/Generics.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/mono_crash.11a6748113.0.json" Line="1" Column="1" />
+      <File FileName="Assignment_1/general_classes/Institution.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,17 +22,11 @@
           <Node name="Assignment_1" expanded="True">
             <Node name="Assignment_1" expanded="True">
               <Node name="general_classes" expanded="True">
-                <Node name="Generics.cs" selected="True" />
+                <Node name="Athlete.cs" selected="True" />
               </Node>
+              <Node name="Interfaces" expanded="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>lessThan30</Value>
-          <Value>registeredRunners</Value>
-          <Value>lessThan30_2</Value>
         </State>
       </Pad>
     </Pads>

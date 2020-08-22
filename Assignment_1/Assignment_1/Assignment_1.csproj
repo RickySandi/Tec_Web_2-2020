@@ -7,5 +7,6 @@
 
   <ItemGroup>
     <Folder Include="general_classes\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 </Project>

@@ -14,13 +14,13 @@ namespace Assignment_1.Linq
             var registeredRunners = PopulateRunners();
             var registeredSoccerPlayers = PopulateSoccerPlayers();
 
-            
+
             foreach (var runner in registeredRunners)
             {
                 Console.WriteLine(runner.GetInfo());
             }
 
-            Console.WriteLine("------------------------------------"); 
+            Console.WriteLine("------------------------------------");
 
             foreach (var soccerPlayer in registeredSoccerPlayers)
             {
