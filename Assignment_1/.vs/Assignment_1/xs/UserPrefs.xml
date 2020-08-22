@@ -1,28 +1,37 @@
 ﻿<Properties StartupConfiguration="{33C7FF54-DA8A-4496-B4D1-E9BBB553BA22}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/general_classes/SoccerPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/Institution.cs">
     <Files>
-      <File FileName="Assignment_1/Program.cs" Line="1" Column="1" />
-      <File FileName="Assignment_1/general_classes/Athlete.cs" />
-      <File FileName="Assignment_1/general_classes/Runner.cs" />
+      <File FileName="Assignment_1/Program.cs" Line="14" Column="1" />
+      <File FileName="Assignment_1/general_classes/Athlete.cs" Line="18" Column="10" />
+      <File FileName="Assignment_1/general_classes/Runner.cs" Line="11" Column="10" />
       <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" Line="14" Column="1" />
-      <File FileName="Assignment_1/Linq.cs" />
+      <File FileName="Assignment_1/Linq.cs" Line="28" Column="1" />
+      <File FileName="Assignment_1/Institution.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Assignment_1" expanded="True">
             <Node name="Assignment_1" expanded="True">
-              <Node name="general_classes" expanded="True">
-                <Node name="SoccerPlayer.cs" selected="True" />
-              </Node>
+              <Node name="general_classes" expanded="True" />
+              <Node name="Institution.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>lessThan30</Value>
+          <Value>registeredRunners</Value>
+          <Value>lessThan30_2</Value>
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assignment__1 FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assignment__1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../Assignment_1/Linq.cs" line="31" column="16" endLine="32" endColumn="66" offsetX="-1" offsetY="-1" expression="runnersByAge" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

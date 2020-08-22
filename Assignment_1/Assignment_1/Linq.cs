@@ -36,6 +36,18 @@ namespace Assignment_1.Linq
             var soccerPlayersByAge = from element in registeredSoccerPlayers
                                      group element by element.AthleteAge;
 
+            //Runners filter by age criteria
+
+            var runnersLessThan30 = registeredRunners.Where(e => e.AthleteAge < 30); //debug
+            var runnersBetween10And20 = registeredRunners.Where(e => e.AthleteAge >= 10 && e.AthleteAge <= 20); //debug
+
+            //Soccer Players filter by age criteria
+
+            var soccerPlayersLessThan30 = registeredSoccerPlayers.Where(e => e.AthleteAge < 30); //debug
+            var soccerPlayersBetween10And20 = registeredSoccerPlayers.Where(e => e.AthleteAge >= 10 && e.AthleteAge <= 20); //debug
+
+
+
 
         }
 
@@ -61,6 +73,26 @@ namespace Assignment_1.Linq
             result.Add(new SoccerPlayer() { Id = 8, AthleteName = "SoccerPlayer 3", AthleteAge = 41 });
             result.Add(new SoccerPlayer() { Id = 9, AthleteName = "SoccerPlayer 4", AthleteAge = 34 });
             result.Add(new SoccerPlayer() { Id = 10, AthleteName = "SoccerPlayer 5", AthleteAge = 22 });
+
+            return result;
+        }
+
+        public static List<Institution> PopulateInstitutions()
+        {
+            var result = new List<Institution>();
+
+            result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France",  AthleteId = 1 });
+            result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France", AthleteId = 3 });
+            result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France", AthleteId = 5 });
+            result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France", AthleteId = 7 });
+            result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France", AthleteId = 9 });
+
+            result.Add(new Institution() { InstitutionName = "FC Bayern Munchen", InstitutionCountry = "Germany", AthleteId = 2 });
+            result.Add(new Institution() { InstitutionName = "PSG ", InstitutionCountry = "France", AthleteId = 4 });
+            result.Add(new Institution() { InstitutionName = "PSG", InstitutionCountry = "France", AthleteId = 6 });
+            result.Add(new Institution() { InstitutionName = "PSG ", InstitutionCountry = "France", AthleteId = 8 });
+            result.Add(new Institution() { InstitutionName = "FC Bayern Munchen", InstitutionCountry = "Germany", AthleteId = 10 });
+            
 
             return result;
         }
