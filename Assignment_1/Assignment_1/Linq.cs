@@ -6,9 +6,9 @@ using Assignment_1.general_classes;
 
 namespace Assignment_1.Linq
 {
-    public static class Tester
+    public static class Linq
     {
-        public static void Test()
+        public static void Queries()
         {
             //Linq
             var registeredRunners = PopulateRunners();
@@ -29,18 +29,6 @@ namespace Assignment_1.Linq
 
             Console.WriteLine("------------------------------------");
 
-            /*
-             
-            //runners by age
-            var runnersByAge = from element in registeredRunners
-                               group element by element.AthleteAge;
-
-            //soccerPlayers by age
-            var soccerPlayersByAge = from element in registeredSoccerPlayers
-                                     group element by element.AthleteAge;
-
-            
-            */
 
             //Runners filter by age criteria
 
