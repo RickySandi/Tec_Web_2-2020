@@ -14,7 +14,7 @@ namespace Assignment_1.Linq
             var registeredRunners = PopulateRunners();
             var registeredSoccerPlayers = PopulateSoccerPlayers();
 
-            /*
+            
             foreach (var runner in registeredRunners)
             {
                 Console.WriteLine(runner.GetInfo());
@@ -29,6 +29,8 @@ namespace Assignment_1.Linq
 
             Console.WriteLine("------------------------------------");
 
+            /*
+             
             //runners by age
             var runnersByAge = from element in registeredRunners
                                group element by element.AthleteAge;
@@ -36,35 +38,77 @@ namespace Assignment_1.Linq
             //soccerPlayers by age
             var soccerPlayersByAge = from element in registeredSoccerPlayers
                                      group element by element.AthleteAge;
+
+            
             */
 
             //Runners filter by age criteria
 
-            var runnersLessThan30 = registeredRunners.Where(e => e.AthleteAge < 30); //debug
+            var runnersLessThan30 = registeredRunners.Where(e => e.AthleteAge < 30); 
 
-             foreach(var runner in runnersLessThan30)
-             {
-
-                Console.WriteLine(runner.GetInfo()); 
-             }
-
-            
-
-            var runnersBetween10And20 = registeredRunners.Where(e => e.AthleteAge >= 10 && e.AthleteAge <= 20); //debug
-
-
-            foreach (var runner in runnersLessThan30)
-            {
+             foreach(var runner in runnersLessThan30){
 
                 Console.WriteLine(runner.GetInfo());
             }
 
+
+            var runnersBetween10And20 = registeredRunners.Where(e => e.AthleteAge >= 10 && e.AthleteAge <= 20); 
+
+            foreach (var runner in runnersBetween10And20){
+
+                Console.WriteLine(runner.GetInfo()); 
+            }
+
+
+
             //Soccer Players filter by age criteria
 
-            var soccerPlayersLessThan30 = registeredSoccerPlayers.Where(e => e.AthleteAge < 30); //debug
-            var soccerPlayersBetween10And20 = registeredSoccerPlayers.Where(e => e.AthleteAge >= 10 && e.AthleteAge <= 20); //debug
+            var soccerPlayersLessThan30 = registeredSoccerPlayers.Where(e => e.AthleteAge < 30); 
+
+            foreach (var soccerPlayer in soccerPlayersLessThan30){
+
+                Console.WriteLine(soccerPlayer.GetInfo());
+            }
 
 
+            var soccerPlayersBetween10And20 = registeredSoccerPlayers.Where(e => e.AthleteAge >= 10 && e.AthleteAge <= 20); 
+
+            foreach (var soccerPlayer in soccerPlayersBetween10And20){
+
+                Console.WriteLine(soccerPlayer.GetInfo());
+            }
+
+
+            var registeredInstitutions = PopulateInstitutions();
+
+            var joinedRunnersInstitutions = from runner in registeredRunners
+                                           join instituttions in registeredInstitutions on runner.Id equals instituttions.AthleteId
+                                           select new
+                                           {
+                                               Name = runner.AthleteName,
+                                               InstitutionName = instituttions.InstitutionName,
+                                               Country = instituttions.InstitutionCountry,
+                                           };
+
+            foreach (var joined in joinedRunnersInstitutions)
+            {
+                Console.WriteLine($"{joined.Name} - {joined.InstitutionName} - {joined.Country} ");
+            }
+
+
+            var joinedSoccerPlayersInstitutions = from soccerPlayer in registeredSoccerPlayers
+                                                  join instituttions in registeredInstitutions on soccerPlayer.Id equals instituttions.AthleteId
+                                            select new
+                                            {
+                                                Name = soccerPlayer.AthleteName,
+                                                InstitutionName = instituttions.InstitutionName,
+                                                Country = instituttions.InstitutionCountry,
+                                            };
+
+            foreach (var joined in joinedSoccerPlayersInstitutions)
+            {
+                Console.WriteLine($"{joined.Name} - {joined.InstitutionName} - {joined.Country} ");
+            }
 
 
         }

@@ -9,6 +9,8 @@ namespace Assignment_1.general_classes
         {
             return "I run";
         }
+        
+   
 
     }
 }
