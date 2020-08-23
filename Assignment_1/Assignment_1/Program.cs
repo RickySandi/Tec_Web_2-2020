@@ -8,31 +8,60 @@ namespace Assignment_1
         static void Main(string[] args)
         {
             //Linq demo 
-            //Assignment_1.Linq.Linq.Queries();
+            Assignment_1.Linq.Linq.Queries();
 
             //Generics
-            Assignment_1.Generics.Tester.Test();
+            //Assignment_1.Generics.Tester.Test();
 
             //INTERFACES
 
-            //decimal amountToShop = 400;
-            //ManagementAgency.type = ManagementAgencyType.SoccerSportGroup;
-            //IManagementAgency soccerAgency = ManagementAgency.Create();
-            //soccerAgency.Owner = "jhon";
-            //soccerAgency.MaxAmount = 5000;
+          /*
+            ManagementAgency.type = ManagementAgencyType.AlwaysRunning;
+            IManagementAgency runningAcency = ManagementAgency.Create();
+            runningAcency.Sport = "Soccer";
+            runningAcency.WorkingYears = 5; 
+            runningAcency.AthleteAge = 25;
+            runningAcency.Height = 190;
 
-            ////ShopWithCreditCard(soccerAgency, amountToShop);
+            ShowAthlete(runningAcency, runningAcency.WorkingYears);
 
-            //Console.ReadKey();
-            //global::System.Console.WriteLine();
+            global::System.Console.WriteLine();
 
-            //ManagementAgency.type = ManagementAgencyType.AlwaysRunning;
-            //var runnigAgency = ManagementAgency.Create();
-            //runnigAgency.Owner = "Peter";
-            //runnigAgency.MaxAmount = 10000;
 
-           // ShopWithCreditCard(runnigAgency, amountToShop);
+            ManagementAgency.type = ManagementAgencyType.SoccerSportGroup;
+            IManagementAgency soccerAgency = ManagementAgency.Create();
+            soccerAgency.Sport = "Running";
+            soccerAgency.WorkingYears = 10;
+            soccerAgency.AthleteAge = 32;
+            soccerAgency.AthleteName = "Iker Casillas";
 
+            ShowAthlete(soccerAgency, soccerAgency.WorkingYears);
+
+            //string Sport { get; set; }
+            //int Payment { get; set; }
+            //int WorkingYears { get; set; }
+
+            //public string SportName { get; set; }
+            //public string AthleteAge { get; set; }
+            //public string Height { get; set; }
+
+            */
+
+        }
+
+
+
+        private static void ShowAthlete(IManagementAgency managementAgency, int years)
+        {
+            Console.WriteLine($" {managementAgency.GetAgency()}");
+            var athleteInformation = managementAgency.GetAthleteInformation();
+            Console.WriteLine($"information:{athleteInformation.SportName} {athleteInformation.AthleteAge}" +
+                $" {athleteInformation.AthleteName} {athleteInformation.Height}");
+
+
+
+            var payment = managementAgency.calculatePayment(managementAgency.WorkingYears);
+            Console.WriteLine($"The payment is: {payment}$ You worked {managementAgency.WorkingYears}$ years alredy");
         }
     }
 }

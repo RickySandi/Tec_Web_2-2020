@@ -39,6 +39,8 @@ namespace Assignment_1.Linq
                 Console.WriteLine(runner.GetInfo());
             }
 
+            global::System.Console.WriteLine();
+
 
             var runnersBetween10And20 = registeredRunners.Where(e => e.AthleteAge >= 10 && e.AthleteAge <= 20); 
 
@@ -47,7 +49,7 @@ namespace Assignment_1.Linq
                 Console.WriteLine(runner.GetInfo()); 
             }
 
-
+            global::System.Console.WriteLine();
 
             //Soccer Players filter by age criteria
 
@@ -58,6 +60,7 @@ namespace Assignment_1.Linq
                 Console.WriteLine(soccerPlayer.GetInfo());
             }
 
+            global::System.Console.WriteLine();
 
             var soccerPlayersBetween10And20 = registeredSoccerPlayers.Where(e => e.AthleteAge >= 10 && e.AthleteAge <= 20); 
 
@@ -66,6 +69,7 @@ namespace Assignment_1.Linq
                 Console.WriteLine(soccerPlayer.GetInfo());
             }
 
+            global::System.Console.WriteLine();
 
             var registeredInstitutions = PopulateInstitutions();
 
@@ -78,10 +82,14 @@ namespace Assignment_1.Linq
                                                Country = instituttions.InstitutionCountry,
                                            };
 
+            global::System.Console.WriteLine();
+
             foreach (var joined in joinedRunnersInstitutions)
             {
                 Console.WriteLine($"{joined.Name} - {joined.InstitutionName} - {joined.Country} ");
             }
+
+            global::System.Console.WriteLine();
 
 
             var joinedSoccerPlayersInstitutions = from soccerPlayer in registeredSoccerPlayers
@@ -92,6 +100,8 @@ namespace Assignment_1.Linq
                                                 InstitutionName = instituttions.InstitutionName,
                                                 Country = instituttions.InstitutionCountry,
                                             };
+
+            global::System.Console.WriteLine();
 
             foreach (var joined in joinedSoccerPlayersInstitutions)
             {

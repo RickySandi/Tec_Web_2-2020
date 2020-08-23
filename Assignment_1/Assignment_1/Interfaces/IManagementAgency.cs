@@ -6,11 +6,16 @@ namespace Assignment_1.Interfaces
 {
     public interface IManagementAgency
     {
-        //string Owner { get; set; }
-        //decimal MaxAmount { get; set; }
+        string Sport { get; set; }
+        int Payment { get; set; }
+        int WorkingYears { get; set; }
+        int AthleteAge { get; set; }
+        int Height { get; set; }
+        string AthleteName { get; set; }
 
-        //string GetBrand();
-        //ManagedAthleteInfo GetHolderInformation();
-        //decimal calculateInterest(decimal amount);
+
+        string GetAgency();
+        ManagedAthleteInfo GetAthleteInformation();
+        int calculatePayment(int years);
     }
 }

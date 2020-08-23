@@ -1,30 +1,29 @@
 ﻿<Properties StartupConfiguration="{33C7FF54-DA8A-4496-B4D1-E9BBB553BA22}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/general_classes/Athlete.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/Linq.cs">
     <Files>
-      <File FileName="Assignment_1/Program.cs" Line="21" Column="43" IsPinned="True" />
-      <File FileName="Assignment_1/general_classes/Athlete.cs" Line="8" Column="30" />
-      <File FileName="Assignment_1/general_classes/Runner.cs" Line="12" Column="9" />
-      <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assignment_1/Linq.cs" Line="19" Column="14" />
-      <File FileName="Assignment_1/Interfaces/ManagedAthleteInfo.cs" Line="6" Column="36" />
-      <File FileName="Assignment_1/Interfaces/ManagementAgency.cs" Line="10" Column="22" />
-      <File FileName="Assignment_1/Interfaces/SoccerSportGroupAgency.cs" Line="12" Column="1" />
-      <File FileName="Assignment_1/Interfaces/IManagementAgency.cs" Line="17" Column="1" />
-      <File FileName="Assignment_1/Interfaces/AlwaysRunningAgency.cs" Line="9" Column="9" />
-      <File FileName="Assignment_1/general_classes/Generics.cs" Line="1" Column="1" />
-      <File FileName="Assignment_1/mono_crash.11a6748113.0.json" Line="1" Column="1" />
-      <File FileName="Assignment_1/general_classes/Institution.cs" Line="1" Column="1" />
-      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/Program.cs" Line="28" Column="13" IsPinned="True" />
+      <File FileName="Assignment_1/general_classes/Athlete.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/general_classes/Runner.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" />
+      <File FileName="Assignment_1/Linq.cs" Line="110" Column="1" />
+      <File FileName="Assignment_1/Interfaces/ManagedAthleteInfo.cs" />
+      <File FileName="Assignment_1/Interfaces/ManagementAgency.cs" Line="22" Column="17" />
+      <File FileName="Assignment_1/Interfaces/SoccerSportGroupAgency.cs" Line="78" Column="10" />
+      <File FileName="Assignment_1/Interfaces/IManagementAgency.cs" />
+      <File FileName="Assignment_1/Interfaces/AlwaysRunningAgency.cs" />
+      <File FileName="Assignment_1/general_classes/Generics.cs" />
+      <File FileName="Assignment_1/mono_crash.11a6748113.0.json" />
+      <File FileName="Assignment_1/general_classes/Institution.cs" />
+      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Assignment_1" expanded="True">
             <Node name="Assignment_1" expanded="True">
-              <Node name="general_classes" expanded="True">
-                <Node name="Athlete.cs" selected="True" />
-              </Node>
+              <Node name="general_classes" expanded="True" />
               <Node name="Interfaces" expanded="True" />
+              <Node name="Linq.cs" selected="True" />
             </Node>
           </Node>
         </State>
