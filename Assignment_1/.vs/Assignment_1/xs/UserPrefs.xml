@@ -2,16 +2,17 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/Program.cs">
     <Files>
       <File FileName="Assignment_1/Linq.cs" Line="110" Column="1" />
-      <File FileName="Assignment_1/Program.cs" Line="47" Column="11" />
+      <File FileName="Assignment_1/Program.cs" Line="36" Column="56" />
       <File FileName="Assignment_1/general_classes/Athlete.cs" />
       <File FileName="Assignment_1/general_classes/Runner.cs" />
       <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" />
-      <File FileName="Assignment_1/general_classes/Generics.cs" Line="32" Column="9" />
-      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" Line="36" Column="9" />
+      <File FileName="Assignment_1/general_classes/Generics.cs" />
+      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" />
       <File FileName="Assignment_1/general_classes/Institution.cs" />
-      <File FileName="Assignment_1/Interfaces/AlwaysRunningAgency.cs" />
+      <File FileName="Assignment_1/Interfaces/AlwaysRunningAgency.cs" Line="90" Column="35" />
       <File FileName="Assignment_1/Interfaces/IManagementAgency.cs" />
       <File FileName="Assignment_1/Interfaces/ManagementAgency.cs" />
+      <File FileName="Assignment_1/Interfaces/SoccerSportGroupAgency.cs" Line="89" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

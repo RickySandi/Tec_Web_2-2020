@@ -83,11 +83,11 @@ namespace Assignment_1.Interfaces
             }
 
             else if (years <=10) {
-                paymentAux = 3000;
+                paymentAux = 3200;
             }
 
             else {
-                paymentAux = 5000;
+                paymentAux = 4500;
 
             }
 

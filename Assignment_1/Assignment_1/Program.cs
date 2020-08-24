@@ -18,7 +18,7 @@ namespace Assignment_1
           
             ManagementAgency.type = ManagementAgencyType.AlwaysRunning;
             IManagementAgency runningAcency = ManagementAgency.Create();
-            runningAcency.Sport = "Soccer";
+            runningAcency.Sport = "Running";
             runningAcency.WorkingYears = 5; 
             runningAcency.AthleteAge = 25;
             runningAcency.Height = 190;
@@ -30,7 +30,7 @@ namespace Assignment_1
 
             ManagementAgency.type = ManagementAgencyType.SoccerSportGroup;
             IManagementAgency soccerAgency = ManagementAgency.Create();
-            soccerAgency.Sport = "Running";
+            soccerAgency.Sport = "Soccer";
             soccerAgency.WorkingYears = 10;
             soccerAgency.AthleteAge = 32;
             soccerAgency.AthleteName = "Iker Casillas";
