@@ -7,15 +7,15 @@ namespace Assignment_1
     {
         static void Main(string[] args)
         {
-            //Linq demo 
+            //Linq  
             Assignment_1.Linq.Linq.Queries();
 
             //Generics
-            //Assignment_1.Generics.Tester.Test();
+            Assignment_1.Generics.Tester.Test();
 
             //INTERFACES
 
-          /*
+          
             ManagementAgency.type = ManagementAgencyType.AlwaysRunning;
             IManagementAgency runningAcency = ManagementAgency.Create();
             runningAcency.Sport = "Soccer";
@@ -44,8 +44,8 @@ namespace Assignment_1
             //public string SportName { get; set; }
             //public string AthleteAge { get; set; }
             //public string Height { get; set; }
-
-            */
+          
+            
 
         }
 

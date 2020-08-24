@@ -142,15 +142,15 @@ namespace Assignment_1.Linq
             var result = new List<Institution>();
 
             result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France",  AthleteId = 1 });
+            result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France", AthleteId = 2 });
             result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France", AthleteId = 3 });
+            result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France", AthleteId = 4 });
             result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France", AthleteId = 5 });
-            result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France", AthleteId = 7 });
-            result.Add(new Institution() { InstitutionName = "World Athletics", InstitutionCountry = "France", AthleteId = 9 });
 
-            result.Add(new Institution() { InstitutionName = "FC Bayern Munchen", InstitutionCountry = "Germany", AthleteId = 2 });
-            result.Add(new Institution() { InstitutionName = "PSG ", InstitutionCountry = "France", AthleteId = 4 });
-            result.Add(new Institution() { InstitutionName = "PSG", InstitutionCountry = "France", AthleteId = 6 });
-            result.Add(new Institution() { InstitutionName = "PSG ", InstitutionCountry = "France", AthleteId = 8 });
+            result.Add(new Institution() { InstitutionName = "FC Bayern Munchen", InstitutionCountry = "Germany", AthleteId = 6 });
+            result.Add(new Institution() { InstitutionName = "PSG ", InstitutionCountry = "France", AthleteId = 7 });
+            result.Add(new Institution() { InstitutionName = "PSG", InstitutionCountry = "France", AthleteId = 8 });
+            result.Add(new Institution() { InstitutionName = "PSG ", InstitutionCountry = "France", AthleteId = 9 });
             result.Add(new Institution() { InstitutionName = "FC Bayern Munchen", InstitutionCountry = "Germany", AthleteId = 10 });
             
 

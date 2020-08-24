@@ -1,20 +1,17 @@
 ﻿<Properties StartupConfiguration="{33C7FF54-DA8A-4496-B4D1-E9BBB553BA22}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/Linq.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/Program.cs">
     <Files>
-      <File FileName="Assignment_1/Program.cs" Line="28" Column="13" IsPinned="True" />
-      <File FileName="Assignment_1/general_classes/Athlete.cs" Line="1" Column="1" />
-      <File FileName="Assignment_1/general_classes/Runner.cs" Line="1" Column="1" />
-      <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" />
       <File FileName="Assignment_1/Linq.cs" Line="110" Column="1" />
-      <File FileName="Assignment_1/Interfaces/ManagedAthleteInfo.cs" />
-      <File FileName="Assignment_1/Interfaces/ManagementAgency.cs" Line="22" Column="17" />
-      <File FileName="Assignment_1/Interfaces/SoccerSportGroupAgency.cs" Line="78" Column="10" />
-      <File FileName="Assignment_1/Interfaces/IManagementAgency.cs" />
-      <File FileName="Assignment_1/Interfaces/AlwaysRunningAgency.cs" />
-      <File FileName="Assignment_1/general_classes/Generics.cs" />
-      <File FileName="Assignment_1/mono_crash.11a6748113.0.json" />
+      <File FileName="Assignment_1/Program.cs" Line="47" Column="11" />
+      <File FileName="Assignment_1/general_classes/Athlete.cs" />
+      <File FileName="Assignment_1/general_classes/Runner.cs" />
+      <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" />
+      <File FileName="Assignment_1/general_classes/Generics.cs" Line="32" Column="9" />
+      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" Line="36" Column="9" />
       <File FileName="Assignment_1/general_classes/Institution.cs" />
-      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" />
+      <File FileName="Assignment_1/Interfaces/AlwaysRunningAgency.cs" />
+      <File FileName="Assignment_1/Interfaces/IManagementAgency.cs" />
+      <File FileName="Assignment_1/Interfaces/ManagementAgency.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +20,7 @@
             <Node name="Assignment_1" expanded="True">
               <Node name="general_classes" expanded="True" />
               <Node name="Interfaces" expanded="True" />
-              <Node name="Linq.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

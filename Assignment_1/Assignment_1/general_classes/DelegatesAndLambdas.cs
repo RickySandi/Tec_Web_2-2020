@@ -33,7 +33,7 @@ namespace Assignment_1.general_classes
 
 
 
-        //FALTA GENERICS.CS PARA CORRES DELEGATES AND LAMBDAS 
+        
 
         }
     }
