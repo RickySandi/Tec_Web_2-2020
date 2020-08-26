@@ -7,6 +7,7 @@ namespace AsyncBreakfast
 {
     class Program
     {
+        
         static async Task Main(string[] args)
         {
             Coffee cup = PourCoffee();
@@ -39,11 +40,6 @@ namespace AsyncBreakfast
             Console.WriteLine("oj is ready");
             Console.WriteLine("Breakfast is ready!");
         }
-
-
-
-
-
 
         static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
         {
