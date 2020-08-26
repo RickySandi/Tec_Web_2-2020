@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{2A930D0D-C861-47DA-8463-52D221FFBF07}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FirstHomework/Interface/SocioFactory.cs">
+    <Files>
+      <File FileName="FirstHomework/Butaca.cs" Line="1" Column="1" />
+      <File FileName="FirstHomework/Generics.cs" Line="1" Column="1" />
+      <File FileName="FirstHomework/Linq.cs" Line="1" Column="1" />
+      <File FileName="FirstHomework/Program.cs" Line="1" Column="1" />
+      <File FileName="FirstHomework/Interface/SocioInfo.cs" Line="1" Column="1" />
+      <File FileName="FirstHomework/Interface/SocioFactory.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FirstHomework" expanded="True">
+            <Node name="FirstHomework" expanded="True">
+              <Node name="Interface" expanded="True">
+                <Node name="SocioFactory.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FirstHomework PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

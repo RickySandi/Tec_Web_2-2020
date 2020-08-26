@@ -1,0 +1,12 @@
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/bin/Debug/netcoreapp2.0/2_AsynchronousProgramming.deps.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/bin/Debug/netcoreapp2.0/2_AsynchronousProgramming.runtimeconfig.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/bin/Debug/netcoreapp2.0/2_AsynchronousProgramming.runtimeconfig.dev.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/bin/Debug/netcoreapp2.0/2_AsynchronousProgramming.dll
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/bin/Debug/netcoreapp2.0/2_AsynchronousProgramming.pdb
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/obj/Debug/netcoreapp2.0/2_AsynchronousProgramming.csprojAssemblyReference.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/obj/Debug/netcoreapp2.0/2_AsynchronousProgramming.AssemblyInfoInputs.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/obj/Debug/netcoreapp2.0/2_AsynchronousProgramming.AssemblyInfo.cs
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/obj/Debug/netcoreapp2.0/2_AsynchronousProgramming.csproj.CoreCompileInputs.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/obj/Debug/netcoreapp2.0/2_AsynchronousProgramming.dll
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/obj/Debug/netcoreapp2.0/2_AsynchronousProgramming.pdb
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/obj/Debug/netcoreapp2.0/2_AsynchronousProgramming.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ClMNnVqNkynp8b0HHPREko5oEPlS82/FjUkeEm3HAgh2Q2i9S/ghSq2z5A/BA47wz3GQHEW78omShKvuOOYboQ==",
+  "success": true,
+  "projectFilePath": "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/2_AsynchronousProgramming/2_AsynchronousProgramming/2_AsynchronousProgramming.csproj",
+  "expectedPackageFiles": [
+    "/Users/ricky/.nuget/packages/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg.sha512",
+    "/Users/ricky/.nuget/packages/microsoft.netcore.dotnetapphost/2.0.0/microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",
+    "/Users/ricky/.nuget/packages/microsoft.netcore.dotnethostpolicy/2.0.0/microsoft.netcore.dotnethostpolicy.2.0.0.nupkg.sha512",
+    "/Users/ricky/.nuget/packages/microsoft.netcore.dotnethostresolver/2.0.0/microsoft.netcore.dotnethostresolver.2.0.0.nupkg.sha512",
+    "/Users/ricky/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "/Users/ricky/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

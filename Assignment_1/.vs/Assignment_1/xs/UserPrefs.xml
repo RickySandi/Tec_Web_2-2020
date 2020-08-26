@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{33C7FF54-DA8A-4496-B4D1-E9BBB553BA22}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/Program.cs">
     <Files>
-      <File FileName="Assignment_1/Linq.cs" Line="110" Column="1" />
-      <File FileName="Assignment_1/Program.cs" Line="36" Column="56" />
-      <File FileName="Assignment_1/general_classes/Athlete.cs" />
-      <File FileName="Assignment_1/general_classes/Runner.cs" />
-      <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" />
-      <File FileName="Assignment_1/general_classes/Generics.cs" />
-      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" />
-      <File FileName="Assignment_1/general_classes/Institution.cs" />
-      <File FileName="Assignment_1/Interfaces/AlwaysRunningAgency.cs" Line="90" Column="35" />
-      <File FileName="Assignment_1/Interfaces/IManagementAgency.cs" />
-      <File FileName="Assignment_1/Interfaces/ManagementAgency.cs" />
-      <File FileName="Assignment_1/Interfaces/SoccerSportGroupAgency.cs" Line="89" Column="32" />
+      <File FileName="Assignment_1/Linq.cs" Line="150" Column="77" />
+      <File FileName="Assignment_1/Program.cs" Line="43" Column="1" />
+      <File FileName="Assignment_1/general_classes/Athlete.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/general_classes/Runner.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/general_classes/Generics.cs" Line="70" Column="1" />
+      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" Line="39" Column="6" />
+      <File FileName="Assignment_1/general_classes/Institution.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/Interfaces/AlwaysRunningAgency.cs" Line="77" Column="9" />
+      <File FileName="Assignment_1/Interfaces/IManagementAgency.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/Interfaces/ManagementAgency.cs" Line="10" Column="22" />
+      <File FileName="Assignment_1/Interfaces/SoccerSportGroupAgency.cs" Line="79" Column="1" />
+      <File FileName="Assignment_1/Interfaces/ManagedAthleteInfo.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

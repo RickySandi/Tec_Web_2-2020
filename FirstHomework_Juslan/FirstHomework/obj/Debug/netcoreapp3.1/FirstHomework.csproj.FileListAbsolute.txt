@@ -1,0 +1,13 @@
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\obj\Debug\netcoreapp3.1\FirstHomework.csprojAssemblyReference.cache
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\obj\Debug\netcoreapp3.1\FirstHomework.AssemblyInfoInputs.cache
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\obj\Debug\netcoreapp3.1\FirstHomework.AssemblyInfo.cs
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\obj\Debug\netcoreapp3.1\FirstHomework.csproj.CoreCompileInputs.cache
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\bin\Debug\netcoreapp3.1\FirstHomework.exe
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\bin\Debug\netcoreapp3.1\FirstHomework.deps.json
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\bin\Debug\netcoreapp3.1\FirstHomework.runtimeconfig.json
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\bin\Debug\netcoreapp3.1\FirstHomework.runtimeconfig.dev.json
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\bin\Debug\netcoreapp3.1\FirstHomework.dll
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\bin\Debug\netcoreapp3.1\FirstHomework.pdb
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\obj\Debug\netcoreapp3.1\FirstHomework.dll
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\obj\Debug\netcoreapp3.1\FirstHomework.pdb
+D:\UNIVERSIDAD\Sexto Semestre\Tec Web\Tareas\FirstHomework\FirstHomework\obj\Debug\netcoreapp3.1\FirstHomework.genruntimeconfig.cache
