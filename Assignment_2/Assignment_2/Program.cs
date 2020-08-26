@@ -7,26 +7,27 @@ namespace Assignment_2
         static void Main(string[] args)
         {
             Combo comboTest = new Combo("Test");
-            
+
 
 
             bool condition = true;
 
             while (condition)
             {
-                Console.WriteLine("-----MENU-----");
+                Console.WriteLine("-----CONSOLE MENU-----");
                 Console.WriteLine("1.Show menu");
                 Console.WriteLine("2.Clean Table");              //sync
                 Console.WriteLine("3.Make order (name)");        //async
                 //Console.WriteLine("4.Table availabilitys");
                 Console.WriteLine("3.Make order (name)");
 
+                Console.WriteLine("Type a number");
                 var option = Console.ReadLine();
                 switch (option)
                 {
 
                     case "1":
-                        
+                        showMenu();
                         break;
 
                     case "2":
@@ -34,11 +35,11 @@ namespace Assignment_2
                         break;
 
                     case "3":
-                        Console.WriteLine("Ingresa tu pedido");
+                        Console.WriteLine("Enter your orders number");
                         string input = Console.ReadLine();
 
-                        Combo combo1 = new Combo(input);
-                        comboTest.Create(combo1);
+                        Combo order = new Combo(input);
+                        comboTest.Create(order);
                         break;
 
                     case "4":
@@ -52,6 +53,16 @@ namespace Assignment_2
                 }
             }
 
+
+        }
+
+        public static void showMenu()
+        {
+
+            Console.WriteLine("-----RESTAURANT MENU-----");
+            Console.WriteLine("1. Combo 1");
+            Console.WriteLine("2. Combo 2");
+            Console.WriteLine("3. Combo 3");
 
         }
     }
