@@ -6,7 +6,9 @@ namespace Assignment_2
     {
         static void Main(string[] args)
         {
-            // ABB_Array<int>* abb = new ABB_Array<int>();
+            Combo comboTest = new Combo("Test");
+            
+
 
             bool condition = true;
 
@@ -15,15 +17,16 @@ namespace Assignment_2
                 Console.WriteLine("-----MENU-----");
                 Console.WriteLine("1.Show menu");
                 Console.WriteLine("2.Clean Table");              //sync
+                Console.WriteLine("3.Make order (name)");        //async
+                //Console.WriteLine("4.Table availabilitys");
                 Console.WriteLine("3.Make order (name)");
-                //Console.WriteLine("4.Table availability (name)");//async
 
                 var option = Console.ReadLine();
                 switch (option)
                 {
 
                     case "1":
-                        //
+                        
                         break;
 
                     case "2":
@@ -31,7 +34,11 @@ namespace Assignment_2
                         break;
 
                     case "3":
-                        //
+                        Console.WriteLine("Ingresa tu pedido");
+                        string input = Console.ReadLine();
+
+                        Combo combo1 = new Combo(input);
+                        comboTest.Create(combo1);
                         break;
 
                     case "4":
