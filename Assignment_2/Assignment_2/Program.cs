@@ -11,6 +11,7 @@ namespace Assignment_2
         {
             Combo order = new Combo();
             // Assignment_2.TableList.Table(); // Create 3x3 Matrix
+            Order pedido = new Order();
 
 
 
@@ -20,6 +21,13 @@ namespace Assignment_2
 
 
             bool condition = true;
+
+            Console.WriteLine("Enter your name");
+            string inputName = Console.ReadLine();
+            pedido.clientName2 = inputName;
+            Console.WriteLine($"Welcome {inputName}");
+
+
 
             while (condition)
             {
@@ -44,7 +52,7 @@ namespace Assignment_2
                         break;
 
                     case "3":
-                        Order pedido = new Order();
+                       
                         Table mesa = new Table();
 
 
@@ -52,7 +60,7 @@ namespace Assignment_2
                         Console.WriteLine("Enter your orders number");
                         string input = Console.ReadLine();
                         var combos = fillCombo("Combo 1");
-                        pedido.addCombo("Ricky", mesa, combos);
+                        pedido.addCombo(inputName, mesa, combos);
                         pedido.showOrder();
 
 

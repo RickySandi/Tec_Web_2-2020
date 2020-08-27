@@ -6,9 +6,12 @@ namespace Assignment_2
     {
         
         public int Id { get; set; }
-        public string ClientName { get; set; }
+        //public string ClientName { get; set; }
+        public string clientName2 { get; set; }
         public Table OrderTable { get; set; }
         public List<Combo> Combos { get; set; }
+
+        //public const string clientName2 = "Ricky"; 
 
 
        
@@ -18,7 +21,8 @@ namespace Assignment_2
 
             var result = new List<Order>();
 
-            result.Add(new Order() { ClientName = name, OrderTable = table, Combos = combos }); 
+            //result.Add(new Order() { ClientName = name, OrderTable = table, Combos = combos });
+              result.Add(new Order() { clientName2 = name});
 
 
             return result; 
@@ -27,9 +31,10 @@ namespace Assignment_2
 
         public void showOrder() {
 
-            Console.WriteLine($"Client: {this.ClientName} Table: {this.OrderTable} Combos: {this.Combos}"); 
+            //Console.WriteLine($"Client: {this.ClientName} Table: {this.OrderTable} Combos: {this.Combos}");
+             Console.WriteLine($"Client: {clientName2}");
 
-       
+
         }
 
 
