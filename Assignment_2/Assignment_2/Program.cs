@@ -9,13 +9,13 @@ namespace Assignment_2
     {
         static void Main(string[] args)
         {
-            Combo comboTest = new Combo("Test");
+            Combo order = new Combo();
             // Assignment_2.TableList.Table(); // Create 3x3 Matrix
-           
-            
 
 
-           
+
+
+
 
 
 
@@ -44,18 +44,30 @@ namespace Assignment_2
                         break;
 
                     case "3":
+                        Order pedido = new Order();
+                        Table mesa = new Table();
+
+
+                        showMenu();
                         Console.WriteLine("Enter your orders number");
                         string input = Console.ReadLine();
+                        var combos = fillCombo("Combo 1");
+                        pedido.addCombo("Ricky", mesa, combos);
+                        pedido.showOrder();
 
-                        Combo order = new Combo(input);
-                        comboTest.Create(order);
+
+
+
+
+
+
                         break;
 
                     case "4":
                         //Console.WriteLine("Table dimensions");
                         //int number = Convert.ToInt32(Console.ReadLine()); read
-                       // int number = 3;
-                       // Table[,] tables = new Table[number, number];
+                        // int number = 3;
+                        // Table[,] tables = new Table[number, number];
 
                         var tablesArray = fillTables();
                         showTables(tablesArray);
@@ -72,7 +84,8 @@ namespace Assignment_2
 
         }
 
-        public static void showMenu(){
+        public static void showMenu()
+        {
 
             Console.WriteLine("-----RESTAURANT MENU-----");
             Console.WriteLine("1. Combo 1");
@@ -96,25 +109,36 @@ namespace Assignment_2
 
 
 
-            return result; 
+            return result;
         }
 
 
-      
 
-        public static void showTables(List<Table> tablesArray ) {
+
+        public static void showTables(List<Table> tablesArray)
+        {
 
             foreach (var table in tablesArray)
             {
-                Console.WriteLine($"{table.tableName} {table.isAvailable}" );
-                
+                Console.WriteLine($"{table.tableName} {table.isAvailable}");
+
             }
 
         }
 
-        
+        public static List<Combo> fillCombo(string name)
+        {
+
+            var result = new List<Combo>();
+
+            result.Add(new Combo() { comboName = name });
+
+
+            return result;
 
 
 
+
+        }
     }
 }

@@ -1,20 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace Assignment_2
+
 {
     public class Combo
     {
 
         // private string combos;
-        private string comboName { get; set; }
+        public string comboName { get; set; }
 
 
-        public Combo(string name)
-        {
-            comboName = name;
 
-        }
 
-        public void Create(Combo combo)
+
+        public void selectedCombo(Combo combo)
         {
 
             if (combo.comboName == "Combo 1")
@@ -43,12 +42,9 @@ namespace Assignment_2
 
             }
 
-            //public fillCombos()
-
-            //calculatePrice
-
-
+      
         }
+        
     }
 }
     
