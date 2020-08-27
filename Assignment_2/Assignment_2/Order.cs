@@ -38,6 +38,7 @@ namespace Assignment_2
 
             //Console.WriteLine($"Client: {clientName} Table: {OrderTable.tableName} Combos: {Combos}");
              Console.WriteLine($"Client: {clientName}");
+
             string tableName = getTableName(table);
             Console.WriteLine($"Table: {tableName}");
 
