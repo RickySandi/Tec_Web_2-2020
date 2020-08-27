@@ -24,7 +24,8 @@ namespace Assignment_2
 
             Console.WriteLine("Enter your name");
             string inputName = Console.ReadLine();
-            pedido.clientName2 = inputName;
+
+            pedido.clientName = inputName;
             Console.WriteLine($"Welcome {inputName}");
 
 
