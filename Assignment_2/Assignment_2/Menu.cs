@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Assignment_2
+namespace Assignment_2.Menu
 {
     public class Menu
     {

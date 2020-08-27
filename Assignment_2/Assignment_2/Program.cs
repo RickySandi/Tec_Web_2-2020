@@ -1,4 +1,5 @@
 ﻿using System;
+using Assignment_2.Menu;
 
 namespace Assignment_2
 {
@@ -7,6 +8,12 @@ namespace Assignment_2
         static void Main(string[] args)
         {
             Combo comboTest = new Combo("Test");
+            // Assignment_2.TableList.Table(); // Create 3x3 Matrix
+           
+            
+
+
+           
 
 
 
@@ -18,7 +25,7 @@ namespace Assignment_2
                 Console.WriteLine("1.Show menu");
                 Console.WriteLine("2.Clean Table");              //sync
                 Console.WriteLine("3.Make order (name)");        //async
-                //Console.WriteLine("4.Table availabilitys");
+                Console.WriteLine("4.Table availability");
                 Console.WriteLine("3.Make order (name)");
 
                 Console.WriteLine("Type a number");
@@ -43,7 +50,14 @@ namespace Assignment_2
                         break;
 
                     case "4":
-                        //Table Availiability
+                        //Console.WriteLine("Table dimensions");
+                        //int number = Convert.ToInt32(Console.ReadLine()); read
+                        int number = 3; 
+                        string[,] tables = new string[number, number];
+
+                        TableList.fillTables(tables,number);
+                        TableList.showTables(tables, number);
+
                         break;
 
 
@@ -56,8 +70,7 @@ namespace Assignment_2
 
         }
 
-        public static void showMenu()
-        {
+        public static void showMenu(){
 
             Console.WriteLine("-----RESTAURANT MENU-----");
             Console.WriteLine("1. Combo 1");
@@ -65,5 +78,8 @@ namespace Assignment_2
             Console.WriteLine("3. Combo 3");
 
         }
+
+
+
     }
 }
