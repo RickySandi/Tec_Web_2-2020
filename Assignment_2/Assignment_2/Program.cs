@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 using Assignment_2.Menu;
 
 namespace Assignment_2
@@ -12,6 +13,11 @@ namespace Assignment_2
             Combo order = new Combo();
             // Assignment_2.TableList.Table(); // Create 3x3 Matrix
             Order pedido = new Order();
+            Table table = new Table();
+
+            var tablesArray = fillTables();
+
+            var freeTables = tablesArray.Where(e => e.isAvailable == "available"); 
 
 
 
@@ -27,6 +33,10 @@ namespace Assignment_2
 
             pedido.clientName = inputName;
             Console.WriteLine($"Welcome {inputName}");
+
+            var choosenTable = cohooseTable(table, freeTables); 
+
+
 
 
 
@@ -60,9 +70,12 @@ namespace Assignment_2
                         showMenu();
                         Console.WriteLine("Enter your orders number");
                         string input = Console.ReadLine();
+
                         var combos = fillCombo("Combo 1");
-                        pedido.addCombo(inputName, mesa, combos);
-                        pedido.showOrder();
+
+                        //pedido.addCombo(inputName, mesa, combos);
+                        pedido.addCombo("Ricky", choosenTable, combos);
+                        pedido.showOrder(choosenTable);
 
 
 
@@ -78,7 +91,7 @@ namespace Assignment_2
                         // int number = 3;
                         // Table[,] tables = new Table[number, number];
 
-                        var tablesArray = fillTables();
+                       
                         showTables(tablesArray);
 
                         break;
@@ -134,6 +147,32 @@ namespace Assignment_2
             }
 
         }
+
+        public static Table cohooseTable(Table selectedTable, IEnumerable<Table> tables) {
+
+           // Table choose = new Table(); 
+            Console.WriteLine("Available tables");
+            Console.WriteLine("Select the table of your choice");
+
+            foreach (var table in tables)
+            {
+
+                Console.WriteLine(table.tableName);
+                //choose = table; 
+            }
+
+            Console.WriteLine("Enter the Table name");
+            string input = Console.ReadLine();
+
+            selectedTable.tableName = input; 
+
+
+
+
+            return selectedTable; 
+
+        }
+
 
         public static List<Combo> fillCombo(string name)
         {

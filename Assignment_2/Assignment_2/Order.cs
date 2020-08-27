@@ -14,25 +14,32 @@ namespace Assignment_2
         //public const string clientName2 = "Ricky"; 
 
 
-       
+        public string getTableName(Table table)
+        {
+            return table.tableName; 
+        }
+
+     
 
 
         public  List<Order> addCombo(string name, Table table, List<Combo> combos) {
 
             var result = new List<Order>();
 
-            //result.Add(new Order() { ClientName = name, OrderTable = table, Combos = combos });
-              result.Add(new Order() { clientName = name});
+            result.Add(new Order() { clientName = name, OrderTable = table, Combos = combos });
+              //result.Add(new Order() { clientName = name});
 
 
             return result; 
 
         }
 
-        public void showOrder() {
+        public void showOrder(Table table) {
 
-            //Console.WriteLine($"Client: {this.ClientName} Table: {this.OrderTable} Combos: {this.Combos}");
+            //Console.WriteLine($"Client: {clientName} Table: {OrderTable.tableName} Combos: {Combos}");
              Console.WriteLine($"Client: {clientName}");
+            string tableName = getTableName(table);
+            Console.WriteLine($"Table: {tableName}");
 
 
         }
