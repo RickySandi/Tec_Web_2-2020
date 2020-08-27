@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using Assignment_2.Menu;
 
 namespace Assignment_2
@@ -52,11 +54,11 @@ namespace Assignment_2
                     case "4":
                         //Console.WriteLine("Table dimensions");
                         //int number = Convert.ToInt32(Console.ReadLine()); read
-                        int number = 3; 
-                        string[,] tables = new string[number, number];
+                       // int number = 3;
+                       // Table[,] tables = new Table[number, number];
 
-                        TableList.fillTables(tables,number);
-                        TableList.showTables(tables, number);
+                        var tablesArray = fillTables();
+                        showTables(tablesArray);
 
                         break;
 
@@ -78,6 +80,59 @@ namespace Assignment_2
             Console.WriteLine("3. Combo 3");
 
         }
+
+        public static List<Table> fillTables()
+        {
+            var result = new List<Table>();
+
+            result.Add(new Table() { tableName = "Table 1", isAvailable = false });
+            result.Add(new Table() { tableName = "Table 2", isAvailable = true });
+            result.Add(new Table() { tableName = "Table 3", isAvailable = true });
+            result.Add(new Table() { tableName = "Table 4", isAvailable = true });
+            result.Add(new Table() { tableName = "Table 6", isAvailable = true });
+            result.Add(new Table() { tableName = "Table 7", isAvailable = true });
+            result.Add(new Table() { tableName = "Table 8", isAvailable = true });
+            result.Add(new Table() { tableName = "Table 9", isAvailable = false });
+
+
+
+            return result; 
+        }
+
+
+        public static string checkAvailability(List<Table> tablesArray)
+        {
+
+            for (int i= 0;i<9;i++)
+            {
+                if (tablesArray[i].isAvailable == true)
+                {
+
+                   return " is available";
+                }
+                else
+                {
+                    return " is not available";
+
+                }
+            }
+
+            return "No more info"; 
+        }
+
+        public static void showTables(List<Table> tablesArray ) {
+
+            foreach (var table in tablesArray)
+            {
+                //Console.WriteLine(table.GetInfo());
+                Console.WriteLine($"{table.tableName}" + checkAvailability(tablesArray));
+
+                
+            }
+
+        }
+
+        
 
 
 
