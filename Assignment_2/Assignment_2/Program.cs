@@ -85,14 +85,14 @@ namespace Assignment_2
         {
             var result = new List<Table>();
 
-            result.Add(new Table() { tableName = "Table 1", isAvailable = false });
-            result.Add(new Table() { tableName = "Table 2", isAvailable = true });
-            result.Add(new Table() { tableName = "Table 3", isAvailable = true });
-            result.Add(new Table() { tableName = "Table 4", isAvailable = true });
-            result.Add(new Table() { tableName = "Table 6", isAvailable = true });
-            result.Add(new Table() { tableName = "Table 7", isAvailable = true });
-            result.Add(new Table() { tableName = "Table 8", isAvailable = true });
-            result.Add(new Table() { tableName = "Table 9", isAvailable = false });
+            result.Add(new Table() { tableName = "Table 1", isAvailable = "available" });
+            result.Add(new Table() { tableName = "Table 2", isAvailable = "available" });
+            result.Add(new Table() { tableName = "Table 3", isAvailable = "not available" });
+            result.Add(new Table() { tableName = "Table 4", isAvailable = "not available" });
+            result.Add(new Table() { tableName = "Table 6", isAvailable = "available" });
+            result.Add(new Table() { tableName = "Table 7", isAvailable = "available" });
+            result.Add(new Table() { tableName = "Table 8", isAvailable = "available" });
+            result.Add(new Table() { tableName = "Table 9", isAvailable = "available" });
 
 
 
@@ -100,33 +100,13 @@ namespace Assignment_2
         }
 
 
-        public static string checkAvailability(List<Table> tablesArray)
-        {
-
-            for (int i= 0;i<9;i++)
-            {
-                if (tablesArray[i].isAvailable == true)
-                {
-
-                   return " is available";
-                }
-                else
-                {
-                    return " is not available";
-
-                }
-            }
-
-            return "No more info"; 
-        }
+      
 
         public static void showTables(List<Table> tablesArray ) {
 
             foreach (var table in tablesArray)
             {
-                //Console.WriteLine(table.GetInfo());
-                Console.WriteLine($"{table.tableName}" + checkAvailability(tablesArray));
-
+                Console.WriteLine($"{table.tableName} {table.isAvailable}" );
                 
             }
 

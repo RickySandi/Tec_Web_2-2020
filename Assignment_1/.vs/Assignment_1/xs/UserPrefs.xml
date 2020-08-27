@@ -1,29 +1,28 @@
 ﻿<Properties StartupConfiguration="{33C7FF54-DA8A-4496-B4D1-E9BBB553BA22}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/general_classes/Generics.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment_1/Interfaces/AlwaysRunningAgency.cs">
     <Files>
-      <File FileName="Assignment_1/Linq.cs" Line="150" Column="77" />
-      <File FileName="Assignment_1/Program.cs" />
-      <File FileName="Assignment_1/general_classes/Athlete.cs" />
-      <File FileName="Assignment_1/general_classes/Runner.cs" />
-      <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" />
+      <File FileName="Assignment_1/Program.cs" Line="11" Column="45" />
+      <File FileName="Assignment_1/general_classes/Athlete.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/general_classes/Runner.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/general_classes/SoccerPlayer.cs" Line="1" Column="1" />
       <File FileName="Assignment_1/general_classes/Generics.cs" Line="15" Column="13" />
-      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" />
-      <File FileName="Assignment_1/general_classes/Institution.cs" />
-      <File FileName="Assignment_1/Interfaces/AlwaysRunningAgency.cs" />
-      <File FileName="Assignment_1/Interfaces/IManagementAgency.cs" />
-      <File FileName="Assignment_1/Interfaces/ManagementAgency.cs" />
-      <File FileName="Assignment_1/Interfaces/SoccerSportGroupAgency.cs" />
-      <File FileName="Assignment_1/Interfaces/ManagedAthleteInfo.cs" />
+      <File FileName="Assignment_1/general_classes/DelegatesAndLambdas.cs" Line="37" Column="1" />
+      <File FileName="Assignment_1/general_classes/Institution.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/Interfaces/AlwaysRunningAgency.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/Interfaces/IManagementAgency.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/Interfaces/ManagementAgency.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/Interfaces/SoccerSportGroupAgency.cs" Line="1" Column="1" />
+      <File FileName="Assignment_1/Interfaces/ManagedAthleteInfo.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Assignment_1" expanded="True">
             <Node name="Assignment_1" expanded="True">
-              <Node name="general_classes" expanded="True">
-                <Node name="Generics.cs" selected="True" />
+              <Node name="general_classes" expanded="True" />
+              <Node name="Interfaces" expanded="True">
+                <Node name="AlwaysRunningAgency.cs" selected="True" />
               </Node>
-              <Node name="Interfaces" expanded="True" />
             </Node>
           </Node>
         </State>
