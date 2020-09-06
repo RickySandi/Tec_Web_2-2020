@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Interfaces; 
+using Interfaces;
+using System.Threading.Tasks;
 namespace Assignment_2
 
 {
@@ -8,8 +9,64 @@ namespace Assignment_2
     {
             // private string combos;
             public string comboName { get; set; }
-        //public List<Burger> burgerList { get; set; }
-        //public List<Drink> drinkList { get; set; }
+            public Burger burger_1;
+            public Drink drink_1;
+
+
+        public void sliceBraed(int minutesDuration)
+        {
+
+            int delay = minutesDuration * 1000;
+
+            Console.WriteLine("Filling your drink");
+            Task.Delay(delay).Wait();
+            Console.WriteLine("Your drink is ready");
+
+
+        }
+
+        public void cookMeat(int minutesDuration)
+        {
+
+            int delay = minutesDuration * 1000;
+
+            Console.WriteLine("Cokking the meat");
+            Task.Delay(delay).Wait();
+            Console.WriteLine("Your meat is ready");
+
+        }
+
+        public void addCheese(int minutesDuration)
+        {
+
+            int delay = minutesDuration * 1000;
+            Console.WriteLine("Adding cheese");
+            Task.Delay(delay).Wait();
+            Console.WriteLine("Cheese alredy added");
+
+        }
+
+        public void prepareBurger()
+        {
+            sliceBraed(2);
+            cookMeat(4);
+            addCheese(1);
+            Console.WriteLine("Burger is ready");
+
+
+        }
+
+        public void fillDrink(int minutesDuration)
+        {
+            int delay = minutesDuration * 10000;
+
+            Console.WriteLine("Filling your drink");
+            Task.Delay(delay).Wait();
+            Console.WriteLine("Your drink is ready");
+
+        }
+
+
 
 
         public void selectedCombo(Combo combo)

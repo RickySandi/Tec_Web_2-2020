@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Interfaces; 
+using System.Threading.Tasks;
 namespace Assignment_2
 {
     public class Drink : IFood
@@ -19,6 +20,16 @@ namespace Assignment_2
         public string GetFood()
         {
             return foodName;
+        }
+
+        public void fillDrink(int minutesDuration)
+        {
+            int delay = minutesDuration * 1000; 
+
+            Console.WriteLine("Filling your drink");
+            Task.Delay(delay).Wait();
+            Console.WriteLine("Your drink is ready");
+
         }
 
 

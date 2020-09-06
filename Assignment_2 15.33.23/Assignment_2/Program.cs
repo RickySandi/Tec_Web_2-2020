@@ -93,31 +93,25 @@ namespace Assignment_2
 
 
                         showMenu();
-                        Console.WriteLine("Enter your orders number");
+                        Console.WriteLine("Enter your Combo name");
                         string input = Console.ReadLine();
 
-                       var combos2 = fillCombo("Combo 1");
+                       var combos2 = fillCombo(input);
 
-                       // pedido.addCombo(inputName, mesa, combos2);
-                        pedido.addCombo("Ricky", choosenTable, combos2);
+                        pedido.addCombo(inputName, mesa, combos2);
+                        //pedido.addCombo("Ricky", choosenTable, combos2);
                         pedido.showOrder(choosenTable, combos2);
 
-
-
-
-
-
+                        combos2.prepareBurger();
+                        combos2.fillDrink(2); 
 
                         break;
 
                     case "4":
-                        //Console.WriteLine("Table dimensions");
-                        //int number = Convert.ToInt32(Console.ReadLine()); read
-                        // int number = 3;
-                        // Table[,] tables = new Table[number, number];
+                      freeTables = tablesArray.Where(e => e.isAvailable == "available");
 
-                       
-                        showTables(tablesArray);
+
+                        showTables(freeTables);
 
                         break;
 
@@ -163,18 +157,18 @@ namespace Assignment_2
 
 
 
-        public static void showTables(List<Table> tablesArray)
+        public static void showTables(IEnumerable<Table> tablesArray)
         {
 
             foreach (var table in tablesArray)
             {
-                Console.WriteLine($"{table.tableName} {table.isAvailable}");
+                Console.WriteLine($"{table.tableName}");
 
             }
 
         }
 
-        public static Table cohooseTable(Table selectedTable, List<Table> tablesArray) {
+        public static Table cohooseTable(Table selectedTable, IEnumerable<Table> tablesArray) {
 
            // Table choose = new Table(); 
             Console.WriteLine("Available tables");
@@ -183,22 +177,15 @@ namespace Assignment_2
             foreach (var table in tablesArray)
             {
 
-                Console.WriteLine(table.tableName);
-                Table choose = table; 
+                Console.WriteLine($"{table.tableName}, {table.isAvailable}");
+               // Table choose = table; 
             }
 
             Console.WriteLine("Enter the Table name");
             string input = Console.ReadLine();
 
             selectedTable.tableName = input;
-
-            for (int i= 0;i < 9; i++){
-                if(input == selectedTable.tableName)
-                {
-                    selectedTable.isAvailable = "not available"; 
-                }
-
-            }
+            selectedTable.isAvailable = "not available"; 
 
 
 
@@ -206,7 +193,7 @@ namespace Assignment_2
 
         }
 
-
+        
         public static Combo fillCombo(string name)
         {
 

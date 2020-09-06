@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Interfaces;
-
+using System.Threading.Tasks;
 namespace Assignment_2
 {
     public class Burger : IFood
@@ -33,18 +33,47 @@ namespace Assignment_2
         //    return totalPrice;
         //}
 
-        //prepareBuerger(){
+        public void sliceBraed(int minutesDuration) {
 
-        //prepararPan()
-        //prepararLechuga()
-        //            .
-        //            .
-        //            .
+            int delay = minutesDuration * 1000;
+
+            Console.WriteLine("Filling your drink");
+            Task.Delay(delay).Wait();
+            Console.WriteLine("Your drink is ready");
 
 
-        //}
+        }
 
-        //calculatePrice
+        public void cookMeat(int minutesDuration)
+        {
+
+            int delay = minutesDuration * 1000;
+
+            Console.WriteLine("Cokking the meat");
+            Task.Delay(delay).Wait();
+            Console.WriteLine("Your meat is ready");
+
+        }
+
+        public void addCheese(int minutesDuration)
+        {
+
+            int delay = minutesDuration * 1000;
+            Console.WriteLine("Adding cheese");
+            Task.Delay(delay).Wait();
+            Console.WriteLine("Cheese alredy added");
+
+        }
+
+        public void prepareBurger()
+        {
+            sliceBraed(2);
+            cookMeat(4);
+            addCheese(1);
+            Console.WriteLine("Burger is ready");
+
+
+        }
 
         public static List<Burger> BurgerMenu()
         {
