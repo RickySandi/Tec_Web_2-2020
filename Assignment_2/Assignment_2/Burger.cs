@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Interfaces; 
+using Interfaces;
+
 namespace Assignment_2
 {
-    public  class Burger :IFood 
+    public class Burger : IFood
     {
+        public int Id { get; set; }
         public int burgerSize { get; set; }
-        private string foodName = "Burger";  
+        private const string foodName = "Burger";  
 
         public int BurgerSize
         {
@@ -15,11 +17,21 @@ namespace Assignment_2
             set { burgerSize = value; }
         }
 
+        public Burger GetBurger()
+        {
+            return this; 
+        }
+
 
         public string GetFood()
         {
             return foodName; 
         }
+
+        //public string calculatePrice()
+        //{
+        //    return totalPrice;
+        //}
 
         //prepareBuerger(){
 
