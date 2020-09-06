@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{4DDF805C-68C3-4091-A781-7E50AE473322}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Burger.cs">
+    <Files>
+      <File FileName="Program.cs" Line="101" Column="27" />
+      <File FileName="Order.cs" Line="16" Column="1" />
+      <File FileName="Table.cs" Line="1" Column="1" />
+      <File FileName="Menu.cs" Line="1" Column="1" />
+      <File FileName="Burger.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assignment_2" expanded="True">
+            <Node name="Assignment_2" expanded="True">
+              <Node name="Burger.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assignment__2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

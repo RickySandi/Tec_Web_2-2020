@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3OiTbuxNKOQ06vNT3vBPZEZSDKhY05SgFfAvurr0B5cg85M5V8pp5URoOH2G9H9FxO6qAvuXEAtzYvegDQXwaQ==",
+  "dgSpecHash": "U8W1+bJTirrDaLcP7NlKscu/R3Xn0WWyl2c3QBSAQLttklJFTvCWBgyOZ8WzYo+9D1y8ilILmMLBWhu3KuXVSA==",
   "success": true,
-  "projectFilePath": "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Assignment_2/Assignment_2/Assignment_2.csproj",
+  "projectFilePath": "/Users/ricky/Desktop/Assignment_2 15.33.23/Assignment_2/Assignment_2.csproj",
   "expectedPackageFiles": [
     "/Users/ricky/.nuget/packages/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg.sha512",
     "/Users/ricky/.nuget/packages/microsoft.netcore.dotnetapphost/2.0.0/microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",
