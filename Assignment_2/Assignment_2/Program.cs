@@ -11,37 +11,13 @@ namespace Assignment_2
         static void Main(string[] args)
         {
             Combo order = new Combo();
+            // Assignment_2.TableList.Table(); // Create 3x3 Matrix
             Order pedido = new Order();
             Table table = new Table();
 
             var tablesArray = fillTables();
 
-            var freeTables = tablesArray.Where(e => e.isAvailable == "available");
-
-            //var burgerList = BurgerMenu();
-            //var drinkList = DrinkMenu();
-
-            //var combos = from burger in burgerList
-            //             join drink in drinkList on burger.Id equals drink.Id
-            //             select new
-            //             {
-            //                 burger_1 = burger.BurgerSize,
-            //                 drink_1 = drink.DrinkSize,
-            //                 comboName = $"Combo {burger.Id}",
-            //             };
-
-            //foreach (var joined in combos)
-            //{
-            //    Console.WriteLine($"Burger: {joined.burger_1} grs. - Drink: {joined.drink_1} mls. - {joined.comboName} ");
-            //}
-
-
-
-
-
-
-
-
+            var freeTables = tablesArray.Where(e => e.isAvailable == "available"); 
 
 
 
@@ -79,8 +55,7 @@ namespace Assignment_2
                 {
 
                     case "1":
-                        //showMenu();
-                        Assignment_2.Linq.Linq.Test();
+                        showMenu();
                         break;
 
                     case "2":
@@ -96,10 +71,10 @@ namespace Assignment_2
                         Console.WriteLine("Enter your orders number");
                         string input = Console.ReadLine();
 
-                       var combos2 = fillCombo("Combo 1");
+                        var combos = fillCombo("Combo 1");
 
                         //pedido.addCombo(inputName, mesa, combos);
-                        pedido.addCombo("Ricky", choosenTable, combos2);
+                        pedido.addCombo("Ricky", choosenTable, combos);
                         pedido.showOrder(choosenTable);
 
 
@@ -147,8 +122,8 @@ namespace Assignment_2
 
             result.Add(new Table() { tableName = "Table 1", isAvailable = "available" });
             result.Add(new Table() { tableName = "Table 2", isAvailable = "available" });
-            result.Add(new Table() { tableName = "Table 3", isAvailable = "available" });
-            result.Add(new Table() { tableName = "Table 4", isAvailable = "available" });
+            result.Add(new Table() { tableName = "Table 3", isAvailable = "not available" });
+            result.Add(new Table() { tableName = "Table 4", isAvailable = "not available" });
             result.Add(new Table() { tableName = "Table 6", isAvailable = "available" });
             result.Add(new Table() { tableName = "Table 7", isAvailable = "available" });
             result.Add(new Table() { tableName = "Table 8", isAvailable = "available" });
@@ -208,25 +183,10 @@ namespace Assignment_2
 
 
             return result;
-        }
-        public static List<Burger> BurgerMenu()
-        {
-            var result = new List<Burger>();
 
-            result.Add(new Burger() { burgerSize = 250, Id = 1 });
-            result.Add(new Burger() { burgerSize = 500, Id = 2 });
 
-            return result;
-        }
 
-        public static List<Drink> DrinkMenu()
-        {
-            var result = new List<Drink>();
 
-            result.Add(new Drink() { drinkSize = 500, Id =1 });
-            result.Add(new Drink() { drinkSize = 750, Id = 2 });
-
-            return result;
         }
     }
 }

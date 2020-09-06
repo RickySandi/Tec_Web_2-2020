@@ -5,9 +5,8 @@ namespace Assignment_2
 {
     public class Drink : IFood
     {
-        public int Id { get; set; }
         public int drinkSize { get; set; }
-        private string foodName = "Drink";
+        private string foodName = "Burger";
 
         public int DrinkSize
         {
