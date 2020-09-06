@@ -18,22 +18,22 @@ namespace Assignment_2
 
             var freeTables = tablesArray.Where(e => e.isAvailable == "available");
 
-            var burgerList = BurgerMenu();
-            var drinkList = DrinkMenu();
+            //var burgerList = BurgerMenu();
+            //var drinkList = DrinkMenu();
 
-            var combos = from burger in burgerList
-                         join drink in drinkList on burger.Id equals drink.Id
-                         select new
-                         {
-                             burger_1 = burger.BurgerSize,
-                             drink_1 = drink.DrinkSize,
-                             comboName = $"Combo {burger.Id}",
-                         };
+            //var combos = from burger in burgerList
+            //             join drink in drinkList on burger.Id equals drink.Id
+            //             select new
+            //             {
+            //                 burger_1 = burger.BurgerSize,
+            //                 drink_1 = drink.DrinkSize,
+            //                 comboName = $"Combo {burger.Id}",
+            //             };
 
-            foreach (var joined in combos)
-            {
-                Console.WriteLine($"Burger: {joined.burger_1} grs. - Drink: {joined.drink_1} mls. - {joined.comboName} ");
-            }
+            //foreach (var joined in combos)
+            //{
+            //    Console.WriteLine($"Burger: {joined.burger_1} grs. - Drink: {joined.drink_1} mls. - {joined.comboName} ");
+            //}
 
 
 
@@ -79,7 +79,8 @@ namespace Assignment_2
                 {
 
                     case "1":
-                        showMenu();
+                        //showMenu();
+                        Assignment_2.Linq.Linq.Test();
                         break;
 
                     case "2":
