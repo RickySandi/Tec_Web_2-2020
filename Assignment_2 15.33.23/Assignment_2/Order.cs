@@ -27,8 +27,13 @@ namespace Assignment_2
             var result = new List<Order>();
 
             result.Add(new Order() { clientName = name, OrderTable = table, Combos = combos });
-            table.isAvailable = "not available"; 
-              //result.Add(new Order() { clientName = name});
+            table.isAvailable = "not available";
+
+            if(combos.comboName == "Combo 1" )
+            combos.comboPrice = 10;
+            else
+            combos.comboPrice = 18;
+
 
 
             return result; 
@@ -42,7 +47,7 @@ namespace Assignment_2
 
             //string tableName = getTableName(table);
             Console.WriteLine($"Table: {table.tableName}");
-            Console.WriteLine($"Combo: {combo.comboName}");
+            Console.WriteLine($"Combo: {combo.comboName} Price: {combo.comboPrice}$");
 
 
         }

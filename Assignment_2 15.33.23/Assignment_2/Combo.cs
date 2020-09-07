@@ -11,6 +11,7 @@ namespace Assignment_2
             public string comboName { get; set; }
             public Burger burger_1;
             public Drink drink_1;
+            public int comboPrice { get; set; }
 
 
         public void sliceBraed(int minutesDuration)
@@ -18,9 +19,9 @@ namespace Assignment_2
 
             int delay = minutesDuration * 1000;
 
-            Console.WriteLine("Filling your drink");
+            Console.WriteLine("Slicing the bread");
             Task.Delay(delay).Wait();
-            Console.WriteLine("Your drink is ready");
+            Console.WriteLine("Bread is ready");
 
 
         }

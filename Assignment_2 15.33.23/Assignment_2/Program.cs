@@ -58,7 +58,7 @@ namespace Assignment_2
             pedido.clientName = inputName;
             Console.WriteLine($"Welcome {inputName}");
 
-            var choosenTable = cohooseTable(table, tablesArray); 
+            var choosenTable = cohooseTable(table,freeTables); 
 
 
 
@@ -113,10 +113,10 @@ namespace Assignment_2
                         break;
 
                     case "4":
-                      freeTables = tablesArray.Where(e => e.isAvailable == "available");
+                        showTables(tablesArray);
 
 
-                        showTables(freeTables);
+                        //showTables(freeTables);
 
                         break;
 
@@ -136,7 +136,7 @@ namespace Assignment_2
             Console.WriteLine("-----RESTAURANT MENU-----");
             Console.WriteLine("1. Combo 1");
             Console.WriteLine("2. Combo 2");
-            Console.WriteLine("3. Combo 3");
+            //Console.WriteLine("3. Combo 3");
 
         }
 
@@ -167,34 +167,35 @@ namespace Assignment_2
 
             foreach (var table in tablesArray)
             {
-                Console.WriteLine($"{table.tableName}");
+                Console.WriteLine($"{table.tableName} {table.isAvailable}");
 
             }
 
         }
 
-        public static Table cohooseTable(Table selectedTable, IEnumerable<Table> tablesArray) {
+        public static Table cohooseTable(Table selectedTable, IEnumerable<Table> tables)
+        {
 
-           // Table choose = new Table(); 
+            // Table choose = new Table(); 
             Console.WriteLine("Available tables");
             Console.WriteLine("Select the table of your choice");
 
-            foreach (var table in tablesArray)
+            foreach (var table in tables)
             {
 
-                Console.WriteLine($"{table.tableName}, {table.isAvailable}");
-               // Table choose = table; 
+                Console.WriteLine(table.tableName);
+                //choose = table; 
             }
 
             Console.WriteLine("Enter the Table name");
             string input = Console.ReadLine();
 
             selectedTable.tableName = input;
-            selectedTable.isAvailable = "not available"; 
 
 
 
-            return selectedTable; 
+
+            return selectedTable;
 
         }
 
