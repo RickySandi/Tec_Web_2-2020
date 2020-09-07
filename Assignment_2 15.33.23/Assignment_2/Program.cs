@@ -71,7 +71,7 @@ namespace Assignment_2
                 Console.WriteLine("2.Clean Table");              //sync
                 Console.WriteLine("3.Make order (name)");        //async
                 Console.WriteLine("4.Table availability");
-                Console.WriteLine("3.Make order (name)");
+                //Console.WriteLine("3.Make order (name)");
 
                 Console.WriteLine("Type a number");
                 var option = Console.ReadLine();
@@ -84,7 +84,11 @@ namespace Assignment_2
                         break;
 
                     case "2":
-                        //
+                        Console.WriteLine("Enter the Table to clean");
+                        string inputTable = Console.ReadLine();
+
+                        cleanTable(inputTable, tablesArray);
+                        Console.WriteLine($"{inputTable} is now clean");
                         break;
 
                     case "3":
@@ -99,11 +103,12 @@ namespace Assignment_2
                        var combos2 = fillCombo(input);
 
                         pedido.addCombo(inputName, mesa, combos2);
-                        //pedido.addCombo("Ricky", choosenTable, combos2);
-                        pedido.showOrder(choosenTable, combos2);
+                        pedido.selectedCombo(combos2); 
 
+                        pedido.showOrder(choosenTable, combos2);
+                        
                         combos2.prepareBurger();
-                        combos2.fillDrink(2); 
+                        combos2.fillDrink(); 
 
                         break;
 
@@ -190,6 +195,18 @@ namespace Assignment_2
 
 
             return selectedTable; 
+
+        }
+
+        public static void cleanTable(string name, IEnumerable<Table> tablesArray) {
+
+            foreach(var table in tablesArray)
+            {
+                if(table.tableName == name)
+                {
+                    table.isAvailable = "available"; 
+                }
+            }
 
         }
 

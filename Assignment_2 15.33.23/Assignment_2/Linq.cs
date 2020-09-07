@@ -49,16 +49,7 @@ namespace Assignment_2. Linq
 
             return result;
         }
-        public void selectedCombo(Combo combo)
-        {
 
-            if (combo.comboName == "Combo 1"){Console.WriteLine("You ordered Combo 1");}
-            else if (combo.comboName == "Combo 2"){Console.WriteLine("You ordered Combo 2");}
-            //else if (combo.comboName == "Combo 3"){Console.WriteLine("You ordered Combo 3");}
-            else{Console.WriteLine("Invalid Combo selected. Please try again");}
-
-
-        }
 
     }
 }

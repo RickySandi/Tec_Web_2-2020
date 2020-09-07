@@ -30,7 +30,7 @@ namespace Assignment_2
 
             int delay = minutesDuration * 1000;
 
-            Console.WriteLine("Cokking the meat");
+            Console.WriteLine("Cooking the meat");
             Task.Delay(delay).Wait();
             Console.WriteLine("Your meat is ready");
 
@@ -56,48 +56,13 @@ namespace Assignment_2
 
         }
 
-        public void fillDrink(int minutesDuration)
+        public void fillDrink(int minutesDuration=2)
         {
-            int delay = minutesDuration * 10000;
+            int delay = minutesDuration * 1000;
 
             Console.WriteLine("Filling your drink");
             Task.Delay(delay).Wait();
             Console.WriteLine("Your drink is ready");
-
-        }
-
-
-
-
-        public void selectedCombo(Combo combo)
-        {
-
-            if (combo.comboName == "Combo 1")
-            {
-
-                Console.WriteLine("You ordered Combo 1");
-
-            }
-            else if (combo.comboName == "Combo 2")
-            {
-
-                Console.WriteLine("You ordered Combo 2");
-
-            }
-
-            else if (combo.comboName == "Combo 3")
-            {
-
-                Console.WriteLine("You ordered Combo 2");
-
-            }
-            else
-            {
-
-                Console.WriteLine("Invalid Combo selected. Please try again");
-
-            }
-
 
         }
 
