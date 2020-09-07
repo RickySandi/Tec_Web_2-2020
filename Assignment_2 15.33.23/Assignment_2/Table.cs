@@ -10,9 +10,6 @@ namespace Assignment_2
         public string isAvailable { get; set; }
 
 
-
-
-
          public static void setTable(Table table, string tName, string availability)
          {
             table.tableName = tName;

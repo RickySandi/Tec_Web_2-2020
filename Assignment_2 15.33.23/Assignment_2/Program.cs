@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using Assignment_2.Menu;
+
 
 namespace Assignment_2
 {
@@ -18,38 +18,7 @@ namespace Assignment_2
 
             var freeTables = tablesArray.Where(e => e.isAvailable == "available");
 
-            var burgerList = BurgerMenu();
-            var drinkList = DrinkMenu();
-
-            var combos = from burger in burgerList
-                         join drink in drinkList on burger.Id equals drink.Id
-                         select new
-                         {
-                             burger_1 = burger.BurgerSize,
-                             drink_1 = drink.DrinkSize,
-                             comboName = $"Combo {burger.Id}",
-                         };
-
-            //foreach (var joined in combos)
-            //{
-            //    Console.WriteLine($"Burger: {joined.burger_1} grs. - Drink: {joined.drink_1} mls. - {joined.comboName} ");
-            //}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
             bool condition = true;
 
             Console.WriteLine("Enter your name");
@@ -66,12 +35,14 @@ namespace Assignment_2
 
             while (condition)
             {
+
                 Console.WriteLine("-----CONSOLE MENU-----");
                 Console.WriteLine("1.Show menu");
                 Console.WriteLine("2.Clean Table");              //sync
                 Console.WriteLine("3.Make order (name)");        //async
                 Console.WriteLine("4.Table availability");
-                //Console.WriteLine("3.Make order (name)");
+                Console.WriteLine("5.Exit");
+                
 
                 Console.WriteLine("Type a number");
                 var option = Console.ReadLine();
@@ -94,6 +65,7 @@ namespace Assignment_2
                     case "3":
                        
                         Table mesa = new Table();
+                         
 
 
                         showMenu();
@@ -115,9 +87,10 @@ namespace Assignment_2
                     case "4":
                         showTables(tablesArray);
 
-
-                        //showTables(freeTables);
-
+                        break;
+                    case "5":
+                        Console.WriteLine("Thaks for choosing this Restaurant. See you");
+                        condition = false;
                         break;
 
 
@@ -136,7 +109,7 @@ namespace Assignment_2
             Console.WriteLine("-----RESTAURANT MENU-----");
             Console.WriteLine("1. Combo 1");
             Console.WriteLine("2. Combo 2");
-            //Console.WriteLine("3. Combo 3");
+            
 
         }
 
@@ -184,15 +157,12 @@ namespace Assignment_2
             {
 
                 Console.WriteLine(table.tableName);
-                //choose = table; 
             }
 
             Console.WriteLine("Enter the Table name");
             string input = Console.ReadLine();
 
             selectedTable.tableName = input;
-
-
 
 
             return selectedTable;

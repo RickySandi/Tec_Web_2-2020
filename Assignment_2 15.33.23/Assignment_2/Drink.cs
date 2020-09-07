@@ -15,8 +15,7 @@ namespace Assignment_2
             get { return drinkSize; }
             set { drinkSize = value; }
         }
-        //calculatePrice
-
+ 
         public string GetFood()
         {
             return foodName;

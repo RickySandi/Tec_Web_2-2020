@@ -53,13 +53,12 @@ namespace Assignment_2
             cookMeat(4);
             addCheese(1);
             Console.WriteLine("Burger is ready");
-
-
         }
 
         public void fillDrink(int minutesDuration=2)
         {
             int delay = minutesDuration * 1000;
+
 
             Console.WriteLine("Filling your drink");
             Task.Delay(delay).Wait();

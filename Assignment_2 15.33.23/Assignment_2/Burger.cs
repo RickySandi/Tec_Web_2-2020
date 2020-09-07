@@ -28,10 +28,6 @@ namespace Assignment_2
             return foodName; 
         }
 
-        //public string calculatePrice()
-        //{
-        //    return totalPrice;
-        //}
 
         public void sliceBraed(int minutesDuration) {
 
@@ -40,7 +36,6 @@ namespace Assignment_2
             Console.WriteLine("Filling your drink");
             Task.Delay(delay).Wait();
             Console.WriteLine("Your drink is ready");
-
 
         }
 
