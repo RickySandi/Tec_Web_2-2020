@@ -29,45 +29,48 @@ namespace Assignment_2
         }
 
 
-        public void sliceBraed(int minutesDuration) {
-
-            int delay = minutesDuration * 1000;
-
-            Console.WriteLine("Filling your drink");
-            Task.Delay(delay).Wait();
-            Console.WriteLine("Your drink is ready");
-
-        }
-
-        public void cookMeat(int minutesDuration)
+        public  async void sliceBraed(int minutesDuration)
         {
 
             int delay = minutesDuration * 1000;
 
-            Console.WriteLine("Cokking the meat");
-            Task.Delay(delay).Wait();
-            Console.WriteLine("Your meat is ready");
+            //Console.WriteLine("Slicing the bread");
+            await Task.Delay(delay);
+            // Console.WriteLine("Bread is ready");
+
 
         }
 
-        public void addCheese(int minutesDuration)
+
+        public  async void cookMeat(int minutesDuration)
         {
 
             int delay = minutesDuration * 1000;
-            Console.WriteLine("Adding cheese");
-            Task.Delay(delay).Wait();
-            Console.WriteLine("Cheese alredy added");
+
+            //    Console.WriteLine("Cooking the meat");
+            await Task.Delay(delay);
+            //  Console.WriteLine("Your meat is ready");
 
         }
 
-        public void prepareBurger()
+        public  async void addCheese(int minutesDuration)
+        {
+
+            int delay = minutesDuration * 1000;
+            //            Console.WriteLine("Adding cheese");
+            await Task.Delay(delay);
+            // Console.WriteLine("Cheese alredy added");
+
+        }
+
+        public  async void prepareBurger()
         {
             sliceBraed(2);
+            await Task.Delay(2000);
             cookMeat(4);
-            addCheese(1);
+            addCheese(12);
+
             Console.WriteLine("Burger is ready");
-
-
         }
 
         public static List<Burger> BurgerMenu()

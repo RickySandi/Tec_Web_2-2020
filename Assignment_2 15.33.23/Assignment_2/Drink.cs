@@ -21,16 +21,16 @@ namespace Assignment_2
             return foodName;
         }
 
-        public void fillDrink(int minutesDuration)
+        public  async void fillDrink(int minutesDuration = 2)
         {
-            int delay = minutesDuration * 1000; 
+            int delay = minutesDuration * 1000;
 
-            Console.WriteLine("Filling your drink");
-            Task.Delay(delay).Wait();
+
+            //Console.WriteLine("Filling your drink");
+            await Task.Delay(delay);
             Console.WriteLine("Your drink is ready");
 
         }
-
 
         public static List<Drink> BurgerMenu()
         {
