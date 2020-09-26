@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace VideoGameAPI.Exceptions
+namespace BreweryAPI.Exceptions
 {
     public class BadRequestOperationException : Exception
     {

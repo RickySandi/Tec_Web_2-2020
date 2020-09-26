@@ -12,5 +12,6 @@
     <Folder Include="Exceptions\" />
     <Folder Include="Data\" />
     <Folder Include="Data\Entities\" />
+    <Folder Include="Data\Repository\" />
   </ItemGroup>
 </Project>
