@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{A5366315-8D9D-4DE3-94F1-6E6D5721F4BC}|BreweryAPI">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BreweryAPI/Controllers/BreweriesController.cs">
+    <Files>
+      <File FileName="BreweryAPI/Program.cs" Line="1" Column="6" />
+      <File FileName="BreweryAPI/Startup.cs" />
+      <File FileName="BreweryAPI/Controllers/BreweriesController.cs" Line="26" Column="10" />
+      <File FileName="BreweryAPI/Models/BreweryModel.cs" Line="1" Column="1" />
+      <File FileName="BreweryAPI/Services/IBreweriesServices.cs" Line="17" Column="1" />
+      <File FileName="BreweryAPI/Services/BreweriesService.cs" Line="23" Column="1" />
+      <File FileName="BreweryAPI/Exceptions/BadRequestOperationException.cs" Line="16" Column="1" />
+      <File FileName="BreweryAPI/Exceptions/NotFoundOperationException.cs" Line="16" Column="1" />
+      <File FileName="BreweryAPI/Data/Entities/BreweryEntity.cs" Line="17" Column="1" />
+      <File FileName="BreweryAPI/Properties/launchSettings.json" Line="30" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BreweryAPI" expanded="True">
+            <Node name="BreweryAPI" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="BreweriesController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+              <Node name="Exceptions" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BreweryAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
