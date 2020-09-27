@@ -2,24 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BreweryAPI.Data.Entities;
 
 namespace BreweryAPI.Data.Repository
 {
     public interface ILibraryRepository
     {
-        ////companies
-        //IEnumerable<CompanyEntity> GetCompanies(string orderBy);
-        //CompanyEntity GetCompany(int companyId);
-        //CompanyEntity CreateCompany(CompanyEntity companyModel);
-        //bool DeleteCompany(int companyId);
-        //bool UpdateCompany(CompanyEntity companyModel);
+        ////breweries
+        IEnumerable<BreweryEntity> GetBreweries(string orderBy);
+        BreweryEntity GetBrewery(int breweryId);
+        BreweryEntity CreateBrewery(BreweryEntity breweryModel);
+        bool DeleteBrewery(int breweryId);
+        bool UpdateBrewery(BreweryEntity breweryModel);
 
-        ////videogames 
-        //VideoGameEntity CreateVideogame(VideoGameEntity videoGame);
-        //VideoGameEntity GetVideogame(int videogameId);
-        //IEnumerable<VideoGameEntity> GetVideoGames(int companyId);
-        //bool UpdateVideogame(VideoGameEntity videoGame);
-        //bool DeleteVideogame(int videogameId);
+        ////beers 
+        BeerEntity CreateBeer(BeerEntity beer);
+        BeerEntity GetBeer(int beerId);
+        IEnumerable<BeerEntity> GetBeers(int breweryId);
+        bool UpdateBeer(BeerEntity beer);
+        bool DeleteBeer(int breweryId);
 
     }
 }

@@ -22,7 +22,7 @@ namespace BreweryAPI.Controllers
             this._breweryService = breweryService;
         }
 
-        //api/companies
+        //api/breweries
         [HttpGet]
         public ActionResult<IEnumerable<BreweryModel>> GetBreweries(string orderBy = "Id")
         {
@@ -40,13 +40,13 @@ namespace BreweryAPI.Controllers
             }
         }
 
-        //api/companies/companiId
+        //api/breweries/breweryId
         [HttpGet("{breweryId:int}", Name = "GetBrewery")]
-        public ActionResult<BreweryModel> GetCompany(int companyId)
+        public ActionResult<BreweryModel> GetCompany(int breweryId)
         {
             try
             {
-                return _breweryService.GetBrewery(companyId);
+                return _breweryService.GetBrewery(breweryId);
             }
             catch (NotFoundOperationException ex)
             {
