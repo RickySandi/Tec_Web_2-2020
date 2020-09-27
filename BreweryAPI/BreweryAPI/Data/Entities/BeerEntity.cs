@@ -13,6 +13,7 @@ namespace BreweryAPI.Data.Entities
         public string Type { get; set; }
         public decimal? alcoholPorcentage { get; set; }
         public decimal? Price { get; set; }
+        public int soldAmount { get; set; }
         public int breweryId { get; set; }
 
         

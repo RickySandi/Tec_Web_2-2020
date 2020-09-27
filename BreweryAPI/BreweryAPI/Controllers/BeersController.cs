@@ -108,11 +108,22 @@ namespace BreweryAPI.Controllers
         }
 
 
-
-        //public ActionResult<BeerModel> FilterBeerByCountry(int breweryId, string beerCountry)
-        //{
-        //    return null; 
-        //}
+        [HttpGet]
+        public ActionResult<IEnumerable<BeerModel>> NotSoldBeers(int breweryId, int soldAmount)
+        {
+            try
+            {
+                return Ok(_beerService.NotSoldBeers(breweryId, soldAmount));
+            }
+            catch (NotFoundOperationException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Something happend: {ex.Message}");
+            }
+        }
 
     }
 }

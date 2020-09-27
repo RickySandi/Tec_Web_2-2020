@@ -71,10 +71,16 @@ namespace BreweryAPI.Services
                 throw new NotFoundOperationException($"the beer id:{beerId}, does not exist");
             }
         }
+        public IEnumerable<BeerModel> NotSoldBeers( int breweryId, int soldAmount)
+        {
+            validateBrewery(breweryId);
+            return _mapper.Map<IEnumerable<BeerModel>>(_libraryRepository.GetBeers(breweryId).Where(b => b.soldAmount < 0));
 
-        
-    
-        
+        }
+
+
+
+
 
     }
 }
