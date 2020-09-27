@@ -36,3 +36,6 @@
 /Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/obj/Debug/netcoreapp3.1/staticwebassets/BreweryAPI.StaticWebAssets.Manifest.cache
 /Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/obj/Debug/netcoreapp3.1/staticwebassets/BreweryAPI.StaticWebAssets.xml
 /Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/obj/Debug/netcoreapp3.1/BreweryAPI.genruntimeconfig.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/obj/Debug/netcoreapp3.1/BreweryAPI.csproj.CopyComplete
