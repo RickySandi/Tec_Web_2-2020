@@ -54,19 +54,20 @@ namespace BreweryAPI.Services
             return _mapper.Map<BeerModel>(_libraryRepository.UpdateBeer(_mapper.Map<BeerEntity>(beer)));
         }
 
-        private void validateBrewery(int breweryId)
+        private int validateBrewery(int breweryId)
         {
             var brewery = _libraryRepository.GetBeer(breweryId);
             if (brewery == null)
             {
                 throw new NotFoundOperationException($"the brewery id:{breweryId}, does not exist");
             }
+            return breweryId; 
         }
 
         private void validateBeer(int beerId)
         {
             var beer = _libraryRepository.GetBeer(beerId);
-            if (beer == null)
+            if (beer == null)                               //|| beer.breweryId == validateBrewery(breweryId)
             {
                 throw new NotFoundOperationException($"the beer id:{beerId}, does not exist");
             }
