@@ -8,10 +8,10 @@ namespace VideoGameAPI.Services
 {
     public interface IVidegamesService
     {
-        VideogameModel CreateVideogame(int CompanyId, VideogameModel videogame);
-        VideogameModel GetVidegame(int CompanyId, int videogameId);
-        IEnumerable<VideogameModel> GetVidegames(int CompanyId);
+        VideogameModel CreateVideogame(int CompanyId, VideogameModel videogame);//
+        VideogameModel GetVidegame(int CompanyId, int videogameId);//
+        IEnumerable<VideogameModel> GetVidegames(int CompanyId);//
         VideogameModel UpdateVideogame(int companyId, int videogameId, VideogameModel videogame);
-        bool DeleteVideogame(int CompanyId, int videogameId);
+        bool DeleteVideogame(int CompanyId, int videogameId);//
     }
 }

@@ -107,5 +107,12 @@ namespace BreweryAPI.Controllers
             }
         }
 
+
+
+        //public ActionResult<BeerModel> FilterBeerByCountry(int breweryId, string beerCountry)
+        //{
+        //    return null; 
+        //}
+
     }
 }

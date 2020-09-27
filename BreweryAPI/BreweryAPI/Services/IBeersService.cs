@@ -13,5 +13,9 @@ namespace BreweryAPI.Services
         BeerModel CreateBeer(int breweryId, BeerModel beer);
         bool DeleteBeer(int breweryId, int beerId);
         BeerModel UpdateBeer(int breweryId, int beerId, BeerModel breweryModel);
+        //IEnumerable<BeerModel> ChangePrice(int breweryId);
+
+
+
     }
 }

@@ -2,24 +2,24 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="BreweryAPI/Data/Repository/LibraryRepository.cs">
     <Files>
       <File FileName="BreweryAPI/Program.cs" Line="27" Column="1" />
-      <File FileName="BreweryAPI/Startup.cs" Line="31" Column="1" />
-      <File FileName="BreweryAPI/Controllers/BreweriesController.cs" Line="49" Column="62" />
+      <File FileName="BreweryAPI/Startup.cs" />
+      <File FileName="BreweryAPI/Controllers/BreweriesController.cs" />
       <File FileName="BreweryAPI/Models/BreweryModel.cs" />
       <File FileName="BreweryAPI/Services/BreweriesService.cs" />
       <File FileName="BreweryAPI/Exceptions/BadRequestOperationException.cs" />
       <File FileName="BreweryAPI/Exceptions/NotFoundOperationException.cs" />
-      <File FileName="BreweryAPI/Data/Entities/BreweryEntity.cs" Line="17" Column="1" />
+      <File FileName="BreweryAPI/Data/Entities/BreweryEntity.cs" />
       <File FileName="BreweryAPI/Properties/launchSettings.json" />
-      <File FileName="BreweryAPI/Data/Repository/ILibraryRepository.cs" Line="12" Column="48" />
-      <File FileName="BreweryAPI/Data/Repository/LibraryRepository.cs" Line="13" Column="42" />
+      <File FileName="BreweryAPI/Data/Repository/ILibraryRepository.cs" />
+      <File FileName="BreweryAPI/Data/Repository/LibraryRepository.cs" Line="35" Column="23" />
       <File FileName="BreweryAPI/Services/IBreweriesService.cs" />
       <File FileName="BreweryAPI/Models/DeleteModel.cs" />
-      <File FileName="BreweryAPI/Controllers/BeersController.cs" Line="9" Column="25" />
-      <File FileName="BreweryAPI/Services/IBeersService.cs" Line="11" Column="1" />
+      <File FileName="BreweryAPI/Controllers/BeersController.cs" />
+      <File FileName="BreweryAPI/Services/IBeersService.cs" />
       <File FileName="BreweryAPI/Models/BeerModel.cs" />
-      <File FileName="BreweryAPI/Data/AutomapperProfile.cs" Line="32" Column="1" />
-      <File FileName="BreweryAPI/Services/BeersService.cs" Line="67" Column="10" />
-      <File FileName="BreweryAPI/Data/Entities/BeerEntity.cs" Line="1" Column="1" />
+      <File FileName="BreweryAPI/Data/AutomapperProfile.cs" />
+      <File FileName="BreweryAPI/Services/BeersService.cs" />
+      <File FileName="BreweryAPI/Data/Entities/BeerEntity.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -34,6 +34,7 @@
                 </Node>
               </Node>
               <Node name="Exceptions" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
           </Node>

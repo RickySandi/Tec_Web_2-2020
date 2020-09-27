@@ -15,12 +15,17 @@ namespace BreweryAPI.Data.Repository
         bool DeleteBrewery(int breweryId);
         bool UpdateBrewery(BreweryEntity breweryModel);
 
+        IEnumerable<BreweryEntity> FilterBreweryByCountry(int breweryId, string beerCountry);
+
+
         ////beers 
         BeerEntity CreateBeer(BeerEntity beer);
         BeerEntity GetBeer(int beerId);
         IEnumerable<BeerEntity> GetBeers(int breweryId);
         bool UpdateBeer(BeerEntity beer);
         bool DeleteBeer(int breweryId);
+        //IEnumerable<BeerEntity> FilterBeerByCountry(int breweryId, string beerCountry);
+
 
     }
 }

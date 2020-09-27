@@ -135,7 +135,13 @@ namespace BreweryAPI.Data.Repository
             return true;
         }
 
+        public IEnumerable<BreweryEntity> FilterBreweryByCountry(int breweryId, string beerCountry)
+        {
+            return breweries.Where(b => b.Country == beerCountry); 
+        }
     }
+
+    
 
 
 }

@@ -93,5 +93,17 @@ namespace BreweryAPI.Services
             _libraryRepository.UpdateBrewery(breweryEntity);
             return breweryModel;
         }
+
+        public IEnumerable<BreweryModel> FilterBreweryByCountry(string orderBy, string beerCountry)
+        {
+            if (!allowedOrderByParameters.Contains(orderBy.ToLower()))
+            {
+                throw new BadRequestOperationException($"the field: {orderBy} is not supported, please use one of these {string.Join(",", allowedOrderByParameters)}");
+            }
+
+            var result = GetBreweries(orderBy).Where(b => b.Country == beerCountry);
+            return result;
+
+        }
     }
 }

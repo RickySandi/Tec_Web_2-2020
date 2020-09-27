@@ -42,7 +42,7 @@ namespace BreweryAPI.Controllers
 
         //api/breweries/breweryId
         [HttpGet("{breweryId:int}", Name = "GetBrewery")]
-        public ActionResult<BreweryModel> GetCompany(int breweryId)
+        public ActionResult<BreweryModel> GetBrewery(int breweryId)
         {
             try
             {
@@ -79,7 +79,7 @@ namespace BreweryAPI.Controllers
         }
 
         [HttpDelete("{breweryId:int}")]
-        public ActionResult<DeleteModel> Deletecompany(int companyId)
+        public ActionResult<DeleteModel> DeleteBrewery(int companyId)
         {
             try
             {
@@ -122,7 +122,25 @@ namespace BreweryAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Something happend: {ex.Message}");
             }
         }
-
+        //
+        [HttpGet("{beerCountry}", Name = "FilterBreweryByCountry")]
+        public ActionResult<IEnumerable<BreweryModel>> FilterBreweryByCountry(string orderBy , string beerCountry)
+        {
+            try
+            {
+                return Ok(_breweryService.FilterBreweryByCountry(orderBy, beerCountry));
+            }
+            catch (BadRequestOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Something happend: {ex.Message}");
+            }
+        }
+        // REVISAR
+        
 
     }
 }
