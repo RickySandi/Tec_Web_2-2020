@@ -123,8 +123,9 @@ namespace BreweryAPI.Controllers
             }
         }
         //
-        [HttpGet("{beerCountry}", Name = "FilterBreweryByCountry")]
-        public ActionResult<IEnumerable<BreweryModel>> FilterBreweryByCountry(string orderBy , string beerCountry)
+        //[HttpGet("{beerCountry:string}", Name = "FilterBreweryByCountry")]
+        [HttpGet("FilterBreweryByCountry")]
+        public ActionResult<IEnumerable<BreweryModel>> FilterBreweryByCountry(string orderBy , string beerCountry="Country")
         {
             try
             {

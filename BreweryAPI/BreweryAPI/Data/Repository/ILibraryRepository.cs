@@ -25,7 +25,7 @@ namespace BreweryAPI.Data.Repository
         bool UpdateBeer(BeerEntity beer);
         bool DeleteBeer(int breweryId);
 
-        IEnumerable<BeerEntity> NotSoldBeers(int soldAmount); 
+        IEnumerable<BeerEntity> NotSoldBeers(); 
 
 
     }

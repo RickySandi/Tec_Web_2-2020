@@ -109,22 +109,22 @@ namespace BreweryAPI.Controllers
 
         //Definir la ruta
 
-        //[HttpGet]
-        //public ActionResult<IEnumerable<BeerModel>> NotSoldBeers(int breweryId, int soldAmount)
-        //{
-        //    try
-        //    {
-        //        return Ok(_beerService.NotSoldBeers(breweryId, soldAmount));
-        //    }
-        //    catch (NotFoundOperationException ex)
-        //    {
-        //        return NotFound(ex.Message);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(StatusCodes.Status500InternalServerError, $"Something happend: {ex.Message}");
-        //    }
-        //}
+        [HttpGet("NotSoldBeers")]
+        public ActionResult<IEnumerable<BeerModel>> NotSoldBeers(int breweryId)
+        {
+            try
+            {
+                return Ok(_beerService.NotSoldBeers(breweryId));
+            }
+            catch (NotFoundOperationException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Something happend: {ex.Message}");
+            }
+        }
 
     }
 }

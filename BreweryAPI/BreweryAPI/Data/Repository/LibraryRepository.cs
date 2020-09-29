@@ -19,17 +19,17 @@ namespace BreweryAPI.Data.Repository
 
         private List<BeerEntity> beers = new List<BeerEntity>
         {
-            new BeerEntity(){ Id = 1, Name = "Hefe-Weissbier", Type = "Weissbier", alcoholPorcentage = 5.5m, Price = 2.5m, soldAmount =10, breweryId =1 },
+            new BeerEntity(){ Id = 1, Name = "Hefe-Weissbier", Type = "Weissbier", alcoholPorcentage = 5.5m, Price = 2.5m, soldAmount =0, breweryId =1 },
             new BeerEntity(){ Id = 2, Name = "Munchner Hell", Type = "Lager", alcoholPorcentage = 4.9m, Price = 3.2m,soldAmount =15, breweryId =1 },
             new BeerEntity(){ Id = 3, Name = "Hefe-Weissbier Dunkel", Type = "Weissbier", alcoholPorcentage = 5.3m, Price = 2.0m, soldAmount =8, breweryId =1 },
 
             new BeerEntity(){ Id = 4, Name = "Flensburger Pilsener", Type = "Pilsener", alcoholPorcentage = 4.8m, Price = 2.5m, soldAmount =3, breweryId =2 },
             new BeerEntity(){ Id = 5, Name = "Flensburger Gold", Type = "Pilsener", alcoholPorcentage = 4.8m, Price = 2.5m,soldAmount =2, breweryId =2 },
             new BeerEntity(){ Id = 6, Name = "Flensburger Dunkel", Type = "Dunkel", alcoholPorcentage = 4.8m, Price = 3.5m, soldAmount =7, breweryId =2 },
-            new BeerEntity(){ Id = 7, Name = "Flensburger Winterbock", Type = "Bock", alcoholPorcentage = 7.0m, Price = 4.0m, soldAmount =1, breweryId =2 },
+            new BeerEntity(){ Id = 7, Name = "Flensburger Winterbock", Type = "Bock", alcoholPorcentage = 7.0m, Price = 4.0m, soldAmount =0, breweryId =2 },
 
             new BeerEntity(){ Id = 8, Name = "Huari Pilsener", Type = "Pilsener", alcoholPorcentage = 4.8m, Price = 2.5m, soldAmount =3, breweryId =3 },
-            new BeerEntity(){ Id = 9, Name = "Huari Miel", Type = "Pilsener", alcoholPorcentage = 4.8m, Price = 2.5m,soldAmount =2, breweryId =3 },
+            new BeerEntity(){ Id = 9, Name = "Huari Miel", Type = "Pilsener", alcoholPorcentage = 4.8m, Price = 2.5m,soldAmount =0, breweryId =3 },
             new BeerEntity(){ Id = 10, Name = "Huari Cafe", Type = "Dunkel", alcoholPorcentage = 4.8m, Price = 3.5m, soldAmount =7, breweryId =3 },
             new BeerEntity(){ Id =11, Name = "Huaria Quinua", Type = "Dunkel", alcoholPorcentage = 7.0m, Price = 4.0m, soldAmount =1, breweryId =3 },
             new BeerEntity(){ Id =12, Name = "Huaria Trigo", Type = "Weissbier", alcoholPorcentage = 7.0m, Price = 4.0m, soldAmount =1, breweryId =3 }
@@ -150,7 +150,7 @@ namespace BreweryAPI.Data.Repository
             return breweries.Where(b => b.Country == beerCountry); 
         }
 
-        public IEnumerable<BeerEntity> NotSoldBeers(int soldAmount)
+        public IEnumerable<BeerEntity> NotSoldBeers()
         {
             return beers.Where(b => b.soldAmount < 1); 
         }
