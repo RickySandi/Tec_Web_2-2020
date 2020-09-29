@@ -125,11 +125,11 @@ namespace BreweryAPI.Controllers
         //
         //[HttpGet("{beerCountry:string}", Name = "FilterBreweryByCountry")]
         [HttpGet("FilterBreweryByCountry")]
-        public ActionResult<IEnumerable<BreweryModel>> FilterBreweryByCountry(string orderBy , string beerCountry="Country")
+        public ActionResult<IEnumerable<BreweryModel>> FilterBreweryByCountry(string beerCountry="Country")
         {
             try
             {
-                return Ok(_breweryService.FilterBreweryByCountry(orderBy, beerCountry));
+                return Ok(_breweryService.FilterBreweryByCountry(beerCountry));
             }
             catch (BadRequestOperationException ex)
             {
@@ -140,7 +140,7 @@ namespace BreweryAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Something happend: {ex.Message}");
             }
         }
-        // REVISAR
+        
         
 
     }

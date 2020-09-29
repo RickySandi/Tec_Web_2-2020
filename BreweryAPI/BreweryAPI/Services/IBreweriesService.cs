@@ -14,7 +14,7 @@ namespace BreweryAPI.Services
         DeleteModel DeleteBrewery(int breweryId);
         BreweryModel UpdateBrewery(int breweryId, BreweryModel breweryModel);
 
-        IEnumerable<BreweryModel> FilterBreweryByCountry(string orderBy, string beerCountry);
+        IEnumerable<BreweryModel> FilterBreweryByCountry(string beerCountry);
 
     }
 }

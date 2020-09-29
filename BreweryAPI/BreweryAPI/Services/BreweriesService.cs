@@ -64,7 +64,7 @@ namespace BreweryAPI.Services
 
         }
 
-        public IEnumerable<BreweryModel> GetBreweries(string orderBy)
+        public IEnumerable<BreweryModel> GetBreweries(string orderBy="Id")
         {
             if (!allowedOrderByParameters.Contains(orderBy.ToLower()))
             {
@@ -94,14 +94,14 @@ namespace BreweryAPI.Services
             return breweryModel;
         }
 
-        public IEnumerable<BreweryModel> FilterBreweryByCountry(string orderBy, string beerCountry)
+        public IEnumerable<BreweryModel> FilterBreweryByCountry(string beerCountry)
         {
-            if (!allowedOrderByParameters.Contains(orderBy.ToLower()))
-            {
-                throw new BadRequestOperationException($"the field: {orderBy} is not supported, please use one of these {string.Join(",", allowedOrderByParameters)}");
-            }
+            //if (!allowedOrderByParameters.Contains(orderBy.ToLower()))
+            //{
+            //    throw new BadRequestOperationException($"the field: {orderBy} is not supported, please use one of these {string.Join(",", allowedOrderByParameters)}");
+            //}
 
-            var result = GetBreweries(orderBy).Where(b => b.Country == beerCountry);
+            var result = GetBreweries().Where(b => b.Country == beerCountry);
             return result;
 
         }
