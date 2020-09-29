@@ -41,7 +41,7 @@ namespace BreweryAPI.Services
 
         public DeleteModel DeleteBrewery(int breweryId)
         {
-            var companyToDelete = GetBrewery(breweryId);
+            var breweryToDelete = GetBrewery(breweryId);
 
             var result = _libraryRepository.DeleteBrewery(breweryId);
 
