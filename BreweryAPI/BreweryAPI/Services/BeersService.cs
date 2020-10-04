@@ -76,7 +76,7 @@ namespace BreweryAPI.Services
         {
             validateBrewery(breweryId);
             return _mapper.Map<IEnumerable<BeerModel>>(_libraryRepository.GetBeers(breweryId).Where(b => b.soldAmount < 1));
-
+   
         }
 
 
