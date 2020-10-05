@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/BreweryAPI.csproj": {}
+    "/Users/ricky/Desktop/BreweryAPI/BreweryAPI/BreweryAPI.csproj": {}
   },
   "projects": {
-    "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/BreweryAPI.csproj": {
+    "/Users/ricky/Desktop/BreweryAPI/BreweryAPI/BreweryAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/BreweryAPI.csproj",
+        "projectUniqueName": "/Users/ricky/Desktop/BreweryAPI/BreweryAPI/BreweryAPI.csproj",
         "projectName": "BreweryAPI",
-        "projectPath": "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/BreweryAPI.csproj",
+        "projectPath": "/Users/ricky/Desktop/BreweryAPI/BreweryAPI/BreweryAPI.csproj",
         "packagesPath": "/Users/ricky/.nuget/packages/",
-        "outputPath": "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/obj/",
+        "outputPath": "/Users/ricky/Desktop/BreweryAPI/BreweryAPI/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

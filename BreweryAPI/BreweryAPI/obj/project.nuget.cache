@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5TqXrJ7Ei0QfGxozDa6cnrRo73HwCRzq/0Vlu9e+2xOGYvxZBxlcnZgFOsQgLN1gqOoCry/Rv7pIfa3AxkdU2Q==",
+  "dgSpecHash": "ANhRhw1pIg8MYkzLIaRCiY3L6L7Y+PiZrBuNrEyqcx7R58nPsUv9LUj/hL2ebhXpq+3b5Rih8qD+7H4s1x3flw==",
   "success": true,
-  "projectFilePath": "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI/BreweryAPI/BreweryAPI.csproj",
+  "projectFilePath": "/Users/ricky/Desktop/BreweryAPI/BreweryAPI/BreweryAPI.csproj",
   "expectedPackageFiles": [
     "/Users/ricky/.nuget/packages/automapper/10.0.0/automapper.10.0.0.nupkg.sha512",
     "/Users/ricky/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.0.1/automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
