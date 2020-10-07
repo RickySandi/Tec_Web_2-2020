@@ -93,6 +93,7 @@ namespace Primer_Examen.Data.Repository
                 newId = lastVote.Id + 1;
             }
             vote.Id = newId;
+            vote.Name = " "; //eliminando nombre del votante
             votes.Add(vote);
             return vote;
         }
