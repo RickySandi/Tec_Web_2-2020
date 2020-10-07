@@ -61,7 +61,7 @@ namespace Primer_Examen.Controllers
             try
             {
                 var voteCreated = _voteService.CreateVote(tableId, vote);
-                return CreatedAtRoute("GetVote", new { tableId = tableId, videogameId = voteCreated.Id }, voteCreated);
+                return CreatedAtRoute("GetVote", new { tableId = tableId, voteId = voteCreated.Id }, voteCreated);
             }
             catch (NotFoundOperationException ex)
             {

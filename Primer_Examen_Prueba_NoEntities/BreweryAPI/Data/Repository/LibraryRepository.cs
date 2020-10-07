@@ -21,10 +21,10 @@ namespace Primer_Examen.Data.Repository
         private List<VoteModel> votes = new List<VoteModel>
         {
             new VoteModel(){ Id = 1, PartyA = true, PartyB = false, PartyC = false, Name="Votante 1", tableId =1 },  //A
-            new VoteModel(){ Id = 1, PartyA = false, PartyB = true, PartyC = false, Name="Votante 2", tableId =1 },  //B
+            new VoteModel(){ Id = 2, PartyA = false, PartyB = true, PartyC = false, Name="Votante 2", tableId =1 },  //B
 
-            new VoteModel(){ Id = 1, PartyA = false, PartyB = false, PartyC = false, Name="Votante 3", tableId =2 },  //Blank
-            new VoteModel(){ Id = 1, PartyA = true, PartyB = true, PartyC = false, Name="Votante 4", tableId =2 }    //Null
+            new VoteModel(){ Id = 3, PartyA = false, PartyB = false, PartyC = false, Name="Votante 3", tableId =2 },  //Blank
+            new VoteModel(){ Id = 4, PartyA = true, PartyB = true, PartyC = false, Name="Votante 4", tableId =2 }    //Null
 
 
         };
