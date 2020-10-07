@@ -29,8 +29,8 @@ namespace Primer_Examen
         {
             services.AddControllers();
 
-            services.AddTransient<IBreweriesService, BreweriesService>();
-            services.AddTransient<IBeersService, BeersService>();
+            services.AddTransient<ITablesService, TablesService>();
+            services.AddTransient<IVotesService, VotesService>();
             services.AddSingleton<ILibraryRepository, LibraryRepository>();
 
             //automapper configuration

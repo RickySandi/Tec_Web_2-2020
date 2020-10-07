@@ -9,152 +9,115 @@ namespace Primer_Examen.Data.Repository
 {
     public class LibraryRepository : ILibraryRepository
     {
-        private List<BreweryModel> breweries = new List<BreweryModel>
+        private List<TableModel> tables = new List<TableModel>
         {
-            new BreweryModel(){ Id = 1, Name = "Paulaner", Country = "Germany", FundationDate = new DateTime(1634, 1, 1)},
-            new BreweryModel(){ Id = 2, Name = "Flensburger", Country = "Germany", FundationDate = new DateTime(1834, 1, 1)},
+            new TableModel(){ Id = 1, From = 'A', To = 'K', Number = 1, President="Presidente 1"},
+            new TableModel(){ Id = 2, From = 'L', To = 'Z', Number = 2, President="Presidente 2"}
 
-            new BreweryModel(){ Id = 3, Name = "Huari", Country = "Bolivia", FundationDate = new DateTime(1925, 1, 1)}
-           
+
+
         };
 
-        private List<BeerModel> beers = new List<BeerModel>
+        private List<VoteModel> votes = new List<VoteModel>
         {
-            new BeerModel(){ Id = 1, Name = "Hefe-Weissbier", Type = "Weissbier", alcoholPorcentage = 5.5m, Price = 2.5m, soldAmount =0, breweryId =1 },
-            new BeerModel(){ Id = 2, Name = "Munchner Hell", Type = "Lager", alcoholPorcentage = 4.9m, Price = 3.2m,soldAmount =15, breweryId =1 },
-            new BeerModel(){ Id = 3, Name = "Hefe-Weissbier Dunkel", Type = "Weissbier", alcoholPorcentage = 5.3m, Price = 2.0m, soldAmount =8, breweryId =1 },
+            new VoteModel(){ Id = 1, PartyA = true, PartyB = false, PartyC = false, Name="Votante 1", tableId =1 },  //A
+            new VoteModel(){ Id = 1, PartyA = false, PartyB = true, PartyC = false, Name="Votante 2", tableId =1 },  //B
 
-            new BeerModel(){ Id = 4, Name = "Flensburger Pilsener", Type = "Pilsener", alcoholPorcentage = 4.8m, Price = 2.5m, soldAmount =3, breweryId =2 },
-            new BeerModel(){ Id = 5, Name = "Flensburger Gold", Type = "Pilsener", alcoholPorcentage = 4.8m, Price = 2.5m,soldAmount =2, breweryId =2 },
-            new BeerModel(){ Id = 6, Name = "Flensburger Dunkel", Type = "Dunkel", alcoholPorcentage = 4.8m, Price = 3.5m, soldAmount =7, breweryId =2 },
-            new BeerModel(){ Id = 7, Name = "Flensburger Winterbock", Type = "Bock", alcoholPorcentage = 7.0m, Price = 4.0m, soldAmount =0, breweryId =2 },
+            new VoteModel(){ Id = 1, PartyA = false, PartyB = false, PartyC = false, Name="Votante 3", tableId =2 },  //Blank
+            new VoteModel(){ Id = 1, PartyA = true, PartyB = true, PartyC = false, Name="Votante 4", tableId =2 }    //Null
 
-            new BeerModel(){ Id = 8, Name = "Huari Pilsener", Type = "Pilsener", alcoholPorcentage = 4.8m, Price = 2.5m, soldAmount =3, breweryId =3 },
-            new BeerModel(){ Id = 9, Name = "Huari Miel", Type = "Pilsener", alcoholPorcentage = 4.8m, Price = 2.5m,soldAmount =0, breweryId =3 },
-            new BeerModel(){ Id = 10, Name = "Huari Cafe", Type = "Dunkel", alcoholPorcentage = 4.8m, Price = 3.5m, soldAmount =7, breweryId =3 },
-            new BeerModel(){ Id =11, Name = "Huaria Quinua", Type = "Dunkel", alcoholPorcentage = 7.0m, Price = 4.0m, soldAmount =1, breweryId =3 },
-            new BeerModel(){ Id =12, Name = "Huaria Trigo", Type = "Weissbier", alcoholPorcentage = 7.0m, Price = 4.0m, soldAmount =1, breweryId =3 }
 
         };
 
    
 
-        // breweries
-        public BreweryModel CreateBrewery(BreweryModel brewery)
+        // tables
+        public TableModel CreateTable(TableModel table)
         {
             int newId;
-            if (breweries.Count == 0)
+            if (tables.Count == 0)
             {
                 newId = 1;
             }
             else
             {
-                newId = breweries.OrderByDescending(b => b.Id).FirstOrDefault().Id + 1;
+                newId = tables.OrderByDescending(b => b.Id).FirstOrDefault().Id + 1;
             }
 
-            brewery.Id = newId;
+            table.Id = newId;
 
-            breweries.Add(brewery);
-            return brewery;
+            tables.Add(table);
+            return table;
         }
 
-        public bool DeleteBrewery(int breweryId)
-        {
-            var breweryToDelete = breweries.FirstOrDefault(c => c.Id == breweryId);
-            breweries.Remove(breweryToDelete);
-            return true;
-        }
+  
 
-        public IEnumerable<BreweryModel> GetBreweries(string orderBy)
+        public IEnumerable<TableModel> GetTables(string orderBy)
         {
             switch (orderBy)
             {
                 case "id":
-                    return breweries.OrderBy(c => c.Id);
-                case "name":
-                    return breweries.OrderBy(c => c.Name);
-                case "country":
-                    return breweries.OrderBy(c => c.Country);
-                case "fundation-date":
-                    return breweries.OrderBy(c => c.FundationDate);
+                    return tables.OrderBy(c => c.Id);
+                case "from":
+                    return tables.OrderBy(c => c.From);
+                case "to":
+                    return tables.OrderBy(c => c.To);
+                case "number":
+                    return tables.OrderBy(c => c.Number);
+                case "president":
+                    return tables.OrderBy(c => c.President);
 
                 default:
-                    return breweries.OrderBy(c => c.Id); ;
+                    return tables.OrderBy(c => c.Id); ;
             }
         }
 
-        public BreweryModel GetBrewery(int breweryId)
+        public TableModel GetTable(int tableId)
         {
-            return breweries.FirstOrDefault(b => b.Id == breweryId);
+            return tables.FirstOrDefault(b => b.Id == tableId);
         }
 
-        public bool UpdateBrewery(BreweryModel breweryModel)
-        {
-            var breweryToUpdate = GetBrewery(breweryModel.Id);
-            //companyToUpdate.CEO = companyModel.CEO ?? companyToUpdate.CEO;
-            breweryToUpdate.Name = breweryModel.Name ?? breweryToUpdate.Name;
-            breweryToUpdate.Country = breweryModel.Country ?? breweryToUpdate.Country;
-            breweryToUpdate.FundationDate = breweryModel.FundationDate ?? breweryToUpdate.FundationDate;
-           
-            return true;
-        }
+    
 
-        //beers
-        public BeerModel CreateBeer(BeerModel beer)
+        //votes
+        public VoteModel CreateVote(VoteModel vote)
         {
             int newId;
-            var lastBeer = beers.OrderByDescending(b => b.Id).FirstOrDefault();
-            if (lastBeer == null)
+            var lastVote = votes.OrderByDescending(v => v.Id).FirstOrDefault();
+            if (lastVote == null)
             {
                 newId = 1;
             }
             else
             {
-                newId = lastBeer.Id + 1;
+                newId = lastVote.Id + 1;
             }
-            beer.Id = newId;
-            beers.Add(beer);
-            return beer;
+            vote.Id = newId;
+            votes.Add(vote);
+            return vote;
         }
 
-        public BeerModel GetBeer(int beerId)
+        public VoteModel GetVote(int voteId)
         {
-            return beers.FirstOrDefault(b => b.Id == beerId);
+            return votes.FirstOrDefault(v => v.Id == voteId);
         }
 
-        public IEnumerable<BeerModel> GetBeers(int breweryId)
+        public IEnumerable<VoteModel> GetVotes(int tableId)
         {
-            return beers.Where(b => b.breweryId == breweryId);
+            return votes.Where(b => b.tableId == tableId);
         }
 
-        public bool UpdateBeer(BeerModel beer)
-        {
-            var beerToUpdate = GetBeer(beer.Id);
-            beerToUpdate.Name = beer.Name ?? beerToUpdate.Name;
-            beerToUpdate.Type = beer.Type ?? beerToUpdate.Type;
-            beerToUpdate.alcoholPorcentage = beer.alcoholPorcentage ?? beerToUpdate.alcoholPorcentage;
-            beerToUpdate.Price = beer.Price ?? beerToUpdate.Price;
-            beerToUpdate.soldAmount = beerToUpdate.soldAmount;
+    
 
-            return true;
-        }
+        //public IEnumerable<TableModel> FilterBreweryByCountry(string beerCountry)
+        //{
+        //    return tables.Where(b => b.Country == beerCountry); 
+        //}
 
-        public bool DeleteBeer(int beerId)
-        {
-            var beerToDelete = beers.SingleOrDefault(b => b.Id == beerId);
-            beers.Remove(beerToDelete);
-            return true;
-        }
-
-        public IEnumerable<BreweryModel> FilterBreweryByCountry(string beerCountry)
-        {
-            return breweries.Where(b => b.Country == beerCountry); 
-        }
-
-        public IEnumerable<BeerModel> NotSoldBeers()
-        {
-            return beers.Where(b => b.soldAmount < 1); 
-        }
+        //public IEnumerable<VoteModel> NotSoldvotes()
+        //{
+        //    return votes.Where(b => b.soldAmount < 1); 
+        //}
     }
 
     

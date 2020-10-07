@@ -65,3 +65,26 @@
 /Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba copy/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.dll
 /Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba copy/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.pdb
 /Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba copy/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.genruntimeconfig.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.csprojAssemblyReference.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.AssemblyInfoInputs.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.AssemblyInfo.cs
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.csproj.CoreCompileInputs.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.MvcApplicationPartsAssemblyInfo.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.dll
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.pdb
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/bin/Debug/netcoreapp3.1/mono_crash.11a6748113.0.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/bin/Debug/netcoreapp3.1/Primer_Examen.deps.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/bin/Debug/netcoreapp3.1/Primer_Examen.runtimeconfig.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/bin/Debug/netcoreapp3.1/Primer_Examen.runtimeconfig.dev.json
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/bin/Debug/netcoreapp3.1/Primer_Examen.dll
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/bin/Debug/netcoreapp3.1/Primer_Examen.pdb
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.RazorTargetAssemblyInfo.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.csproj.CopyComplete
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/staticwebassets/Primer_Examen.StaticWebAssets.Manifest.cache
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/staticwebassets/Primer_Examen.StaticWebAssets.xml
+/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/Primer_Examen_Prueba_NoEntities/BreweryAPI/obj/Debug/netcoreapp3.1/Primer_Examen.genruntimeconfig.cache

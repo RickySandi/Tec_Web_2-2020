@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Primer_Examen.Models
 {
-    public class BeerModel
+    public class VoteModel
     {
         public int Id { get; set; }
+        public bool PartyA { get; set; }
+        public bool PartyB { get; set; }
+        public bool PartyC { get; set; }
         public string Name { get; set; }
-        public string Type { get; set; }
-        public decimal? alcoholPorcentage { get; set; }
-        public decimal? Price { get; set; }
-        public int soldAmount { get; set; }
-        public int breweryId { get; set; }
+        public int tableId { get; set; }
     }
 }

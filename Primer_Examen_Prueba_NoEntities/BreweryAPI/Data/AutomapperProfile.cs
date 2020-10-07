@@ -12,11 +12,11 @@ namespace Primer_Examen.Data
     {
         public AutomapperProfile()
         {
-            this.CreateMap<BreweryModel, BreweryModel>() //<BreweryEntity, >
+            this.CreateMap<TableModel, TableModel>() //<BreweryEntity, >
             .ReverseMap();
 
 
-            this.CreateMap<BeerModel, BeerModel>() // <, BeerEntity>
+            this.CreateMap<TableModel, TableModel>() // <, BeerEntity>
                 .ReverseMap();
             //this.CreateMap<Camp, CampModel>()
             //  .ForMember(c => c.Venue, o => o.MapFrom(m => m.Location.VenueName))

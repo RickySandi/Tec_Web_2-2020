@@ -2,14 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-//using Primer_Examen.Data.Entities;
-using Primer_Examen.Models;
+using Primer_Examen.Models; 
 
-namespace Primer_Examen.Data.Repository
+namespace Primer_Examen.Services
 {
-    public interface ILibraryRepository
+     public interface ITablesService
     {
-        ////tables
+        IEnumerable<TableModel> GetTables(string orderBy);
+        TableModel GetTable(int tableId);
+        TableModel CreateTable(TableModel tableModel); 
+        
+
+        //IEnumerable<TableModel> FilterBreweryByCountry(string beerCountry);
+
+        /*
+              ////tables
         IEnumerable<TableModel> GetTables(string orderBy);
         TableModel GetTable(int tableId);
         TableModel CreateTable(TableModel TableModel);
@@ -24,11 +31,7 @@ namespace Primer_Examen.Data.Repository
         VoteModel CreateVote(VoteModel beer);
         VoteModel GetVote(int voteId);
         IEnumerable<VoteModel> GetVotes(int tableId);
-
-        
-
-       // IEnumerable<VoteModel> NotSoldBeers(); 
-
+         */
 
     }
 }
