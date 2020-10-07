@@ -15,6 +15,7 @@ namespace Primer_Examen.Models
         public char To { get; set; }
         public int Number { get; set; }
         public string President { get; set; }
+        public bool IsValid { get; set; }
 
     }
 }

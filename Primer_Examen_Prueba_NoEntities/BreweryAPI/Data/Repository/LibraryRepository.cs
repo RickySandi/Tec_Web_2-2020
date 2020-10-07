@@ -11,8 +11,8 @@ namespace Primer_Examen.Data.Repository
     {
         private List<TableModel> tables = new List<TableModel>
         {
-            new TableModel(){ Id = 1, From = 'A', To = 'K', Number = 1, President="Presidente 1"},
-            new TableModel(){ Id = 2, From = 'L', To = 'Z', Number = 2, President="Presidente 2"}
+            new TableModel(){ Id = 1, From = 'A', To = 'K', Number = 1, President="Presidente 1", IsValid =true},
+            new TableModel(){ Id = 2, From = 'L', To = 'Z', Number = 2, President="Presidente 2", IsValid = true}
 
 
 
@@ -81,11 +81,9 @@ namespace Primer_Examen.Data.Repository
         {
             var tableToInvalidate = GetTable(tableModel.Id); 
 
-                tableToInvalidate.Id = 0;
-                tableToInvalidate.From = ' ';
-                tableToInvalidate.To = ' ';
-                tableToInvalidate.Number = 0;
-                tableToInvalidate.President = " ";
+                
+                tableToInvalidate.IsValid = false;
+               
 
 
             return true; 

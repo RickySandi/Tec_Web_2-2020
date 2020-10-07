@@ -22,7 +22,8 @@ namespace Primer_Examen.Services
             "from",
             "to",
             "number",
-            "president"
+            "president",
+            "isvalid"
 
         }; 
 
