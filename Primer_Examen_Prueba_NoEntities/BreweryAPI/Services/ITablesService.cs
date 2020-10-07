@@ -10,8 +10,9 @@ namespace Primer_Examen.Services
     {
         IEnumerable<TableModel> GetTables(string orderBy);
         TableModel GetTable(int tableId);
-        TableModel CreateTable(TableModel tableModel); 
-        
+        TableModel CreateTable(TableModel tableModel);
+        TableModel InvalidateTable(int tableId,TableModel tableModel); 
+
 
         //IEnumerable<TableModel> FilterBreweryByCountry(string beerCountry);
 

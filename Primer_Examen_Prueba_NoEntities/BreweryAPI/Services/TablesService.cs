@@ -65,8 +65,16 @@ namespace Primer_Examen.Services
             return _mapper.Map<TableModel>(brewery);
         }
 
-     
- 
+        public TableModel InvalidateTable(int tableId, TableModel tableModel)
+        {
+            var tableEntity = _mapper.Map<TableModel>(tableModel);
+            _libraryRepository.InvalidateTable(tableEntity);
+            return tableModel;
+
+        }
+
+
+
         //public IEnumerable<TableModel> FilterBreweryByCountry(string beerCountry)
         //{
         //    //if (!allowedOrderByParameters.Contains(orderBy.ToLower()))

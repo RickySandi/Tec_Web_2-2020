@@ -13,7 +13,9 @@ namespace Primer_Examen.Data.Repository
         IEnumerable<TableModel> GetTables(string orderBy);
         TableModel GetTable(int tableId);
         TableModel CreateTable(TableModel TableModel);
-     
+
+        bool InvalidateTable(TableModel tableModel); 
+
         //bool InvalidateTable(TableModel TableModel);
         //void GetResult
 

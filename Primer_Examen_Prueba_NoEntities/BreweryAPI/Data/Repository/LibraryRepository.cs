@@ -77,7 +77,21 @@ namespace Primer_Examen.Data.Repository
             return tables.FirstOrDefault(b => b.Id == tableId);
         }
 
-    
+        public bool InvalidateTable(TableModel tableModel)
+        {
+            var tableToInvalidate = GetTable(tableModel.Id); 
+
+                tableToInvalidate.Id = 0;
+                tableToInvalidate.From = ' ';
+                tableToInvalidate.To = ' ';
+                tableToInvalidate.Number = 0;
+                tableToInvalidate.President = " ";
+
+
+            return true; 
+        }
+
+
 
         //votes
         public VoteModel CreateVote(VoteModel vote)
@@ -93,7 +107,7 @@ namespace Primer_Examen.Data.Repository
                 newId = lastVote.Id + 1;
             }
             vote.Id = newId;
-            vote.Name = " "; //eliminando nombre del votante
+            vote.Name = " "; //eliminando nombre del votante para endpoint 2 
             votes.Add(vote);
             return vote;
         }
@@ -105,7 +119,7 @@ namespace Primer_Examen.Data.Repository
 
         public IEnumerable<VoteModel> GetVotes(int tableId)
         {
-            return votes.Where(b => b.tableId == tableId);
+            return votes.Where(v => v.tableId == tableId);
         }
 
     

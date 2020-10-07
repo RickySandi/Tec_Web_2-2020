@@ -76,8 +76,36 @@ namespace Primer_Examen.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Something happend: {ex.Message}");
             }
         }
+        [HttpPut("{tableId:int}")]
+        public IActionResult InvalidateTable(int tableId, [FromBody] TableModel tableModel) //update
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    foreach (var pair in ModelState)
+                    {
+                        if (pair.Key == nameof(tableModel.President) && pair.Value.Errors.Count > 0)
+                        {
+                            return BadRequest(pair.Value.Errors);
+                        }
+                    }
+                }
 
-        
+                return Ok(_tableService.InvalidateTable(tableId, tableModel));
+            }
+            catch (NotFoundOperationException ex)
+            {
+                return NotFound(ex.Message); ;
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Something happend: {ex.Message}");
+            }
+
+        }
+
+
         //
         ////[HttpGet("{beerCountry:string}", Name = "FilterBreweryByCountry")]
         //[HttpGet("FilterBreweryByCountry")]
@@ -96,8 +124,8 @@ namespace Primer_Examen.Controllers
         //        return StatusCode(StatusCodes.Status500InternalServerError, $"Something happend: {ex.Message}");
         //    }
         //}
-        
-        
+
+
 
     }
 }
