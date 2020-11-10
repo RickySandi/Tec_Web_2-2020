@@ -5,11 +5,19 @@ body {
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
+
+  .bg-1-index { 
+    background-color:white;
+    /* background: url(/fotos/12.jpeg); */
+    color:black;
+    height: 900px;
+    
+  }
   .bg-1 { 
     /* background-color:#ffcc00; Green */
     background: url(/fotos/landscape.jpg);
     color:black;
-    height: 1000px;
+    height: 900px;
     
   }
   .bg-2 { 
@@ -112,15 +120,24 @@ body {
     background-color:gray;
     text-align: right;
   }
-  div.c {
+  div.mtb {
     text-align: center;
     /* background-image: url(/fotos/bike_2.jpg); */
     background: url(/fotos/bike_2.jpg);
     color:black;
+    max-width: auto;
     height: 1000px;
-  
-    
   } 
+
+  div.ruta {
+    text-align: center;
+    /* background-image: url(/fotos/bike_2.jpg); */
+    background: url(/fotos/road_3.jpg);
+    color:black;
+    height: 1800px;
+  }
+
+  
   .flex-container > div {
     background-color: #f1f1f1;
     margin: 10px;
