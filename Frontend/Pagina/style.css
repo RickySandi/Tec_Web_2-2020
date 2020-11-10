@@ -126,8 +126,8 @@ body {
     background: url(/fotos/trek_2.jpg);
     color:black;
     /* max-width: auto; */
-    height: 1000px;
-    width: 2000px;
+    height: 1300px;
+    /* width: 2000px; */
   } 
 
   div.ruta {
@@ -135,7 +135,7 @@ body {
     /* background-image: url(/fotos/bike_2.jpg); */
     background: url(/fotos/road_3.jpg);
     color:black;
-    height: 1500px;
+    height: 1300px;
   }
 
   
