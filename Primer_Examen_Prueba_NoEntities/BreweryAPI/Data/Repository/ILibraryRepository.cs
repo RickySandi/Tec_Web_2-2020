@@ -27,9 +27,13 @@ namespace Primer_Examen.Data.Repository
         VoteModel GetVote(int voteId);
         IEnumerable<VoteModel> GetVotes(int tableId);
 
-        
+        //results
+        ResultsModel GetResults(int resultId);
 
-       // IEnumerable<VoteModel> NotSoldBeers(); 
+
+
+
+        // IEnumerable<VoteModel> NotSoldBeers(); 
 
 
     }

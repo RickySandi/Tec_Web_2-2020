@@ -29,7 +29,13 @@ namespace Primer_Examen.Data.Repository
 
         };
 
-   
+        private List<ResultsModel> results = new List<ResultsModel>
+        {
+            new ResultsModel(){Id =1, PartyA = 0, PartyB = 0, PartyC = 0, nulos= 0, blancos =0 }  // resultados se incializan en 0 
+         
+
+        };
+
 
         // tables
         public TableModel CreateTable(TableModel table)
@@ -87,6 +93,11 @@ namespace Primer_Examen.Data.Repository
 
 
             return true; 
+        }
+        //results
+        public ResultsModel GetResults(int resultId)
+        {
+            return results.FirstOrDefault(r => r.Id == resultId);
         }
 
 

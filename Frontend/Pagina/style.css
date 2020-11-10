@@ -1,0 +1,127 @@
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color:#A0522D; /* Green */
+    color:black;
+    height: 650px;
+    
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: black;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .bg-5 { 
+    background: url(/fotos/bike_1.jpeg);
+    /* background-size: contain; */
+    /* background-size: cover;  */
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+  }
+  .h3{
+    color: #000;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  .container{
+    color: black;
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  div {
+    display: block;
+ }
+  ul {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+  }
+  body {font-family: Arial, Helvetica, sans-serif;}
+  * {box-sizing: border-box;}
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #1f1fff; /* Black Gray */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: black;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  div.flex-container {
+    display: flex;
+    background-color:gray;
+    text-align: right;
+  }
+
+  div.prueba {
+    display: flex;
+    background-color:gray;
+    text-align: right;
+  }
+  div.c {
+    text-align: center;
+    background-image: url(/fotos/bike_2.jpg);
+    height: 100%;
+  
+    
+  } 
+  
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    /* padding: 20px; */
+    font-size: 30px;
+  }
