@@ -6,9 +6,10 @@ body {
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-    background-color:#A0522D; /* Green */
+    /* background-color:#ffcc00; Green */
+    background: url(/fotos/landscape.jpg);
     color:black;
-    height: 650px;
+    height: 1000px;
     
   }
   .bg-2 { 
@@ -28,9 +29,10 @@ body {
     background: url(/fotos/bike_1.jpeg);
     /* background-size: contain; */
     /* background-size: cover;  */
-    max-width: 100%;
-    max-height: 100%;
-    display: block; /* remove extra space below image */
+    /* max-width: 100%;
+    max-height: 100%; */
+    display: block; /*remove extra space below image*/
+    height: 2500px;
   }
   .h3{
     color: #000;
@@ -112,16 +114,17 @@ body {
   }
   div.c {
     text-align: center;
-    background-image: url(/fotos/bike_2.jpg);
-    height: 100%;
+    /* background-image: url(/fotos/bike_2.jpg); */
+    background: url(/fotos/bike_2.jpg);
+    color:black;
+    height: 1000px;
   
     
   } 
-  
-  
   .flex-container > div {
     background-color: #f1f1f1;
     margin: 10px;
     /* padding: 20px; */
     font-size: 30px;
   }
+
