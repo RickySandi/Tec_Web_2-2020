@@ -105,6 +105,7 @@ body {
   
   input[type=submit]:hover {
     background-color: black;
+    
   }
   
   .container {
@@ -133,6 +134,12 @@ body {
     /* max-width: auto; */
     height: 1500px;
     /* width: 2500px; */
+  }
+  .button1 {
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    
   } 
 
   div.mtb {
