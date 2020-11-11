@@ -246,3 +246,14 @@ img {vertical-align: middle;}
   color: #000;
   border: #000;
 }
+
+figure.item {
+  /* horizontal-align: top;  */
+  /* display: inline-block; */
+  text-align: center;
+  width: 120px; 
+}
+
+.caption {
+  display: block;
+}
