@@ -6,13 +6,16 @@ body {
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
 
+  .bg-1-index {
+    color:black;
+  }
+
   .bg-1-ruta { 
     background-color:white;
     background: url(/fotos/maillots/race.jpg);
     height: 900px;
     color: white;
-    
-    
+  
   }
   .bg-1-mtb { 
     /* background-color:#ffcc00; Green */
@@ -121,6 +124,17 @@ body {
     background-color:gray;
     text-align: right;
   }
+
+  div.index {
+    text-align: center;
+    /* background-image: url(/fotos/bike_2.jpg); */
+    background: url(/fotos/orbea_rise.png);
+    color:black; 
+    /* max-width: auto; */
+    height: 1500px;
+    /* width: 2500px; */
+  } 
+
   div.mtb {
     text-align: center;
     /* background-image: url(/fotos/bike_2.jpg); */
@@ -247,5 +261,6 @@ img {vertical-align: middle;}
   color: #000;
   border: #000;
 }
+
 
 
