@@ -29,6 +29,13 @@ body {
     color: #ffffff;
 
   }
+  .bg-2-index { 
+    background:url(/fotos/bike_maintenance_1.jpg); /* Dark Blue */
+    height: 900px;
+    color: #ffffff;
+
+  }
+
   .bg-3 { 
     background-color: #e0e0e0; /* White */
     color: black;
