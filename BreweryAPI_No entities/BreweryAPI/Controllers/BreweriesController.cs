@@ -94,8 +94,8 @@ namespace BreweryAPI.Controllers
             }
         }
 
-        [HttpPut("{companyId:int}")]
-        public IActionResult UpdateBrewery(int companyId, [FromBody] BreweryModel breweryModel)
+        [HttpPut("{breweryId:int}")]
+        public IActionResult UpdateBrewery(int breweryId, [FromBody] BreweryModel breweryModel)
         {
             try
             {
@@ -110,7 +110,7 @@ namespace BreweryAPI.Controllers
                     }
                 }
 
-                return Ok(_breweryService.UpdateBrewery(companyId, breweryModel));
+                return Ok(_breweryService.UpdateBrewery(breweryId, breweryModel));
             }
             catch (NotFoundOperationException ex)
             {
