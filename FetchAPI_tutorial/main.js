@@ -9,8 +9,8 @@ const renderBreweries = (breweries) => {
         output+= `
         <div class="card mt-4 col-md-6 bg-ligt">
          <div class="card-body" data-id=${brewery.id}>
-           <h5 class="card-title">Name: ${brewery.name}</h5>
-           <h6 class="card-subtitle mb-2 text-muted">Country: ${brewery.country}</h6>
+           <h5 class="card-name">Name: ${brewery.name}</h5>
+           <h6 class="card-country">Country: ${brewery.country}</h6>
            <p class="card-text">id: ${brewery.id}</p>
            <a href="#" class="card-link" id="edit-brewery">Edit</a>
            <a href="#" class="card-link" id="delete-brewery">Delete</a>
@@ -47,6 +47,15 @@ breweriesList.addEventListener('click', (e) =>{
           .then(res => res.json())
           .then(data => location.reload())
     }
+
+    if(editButtonIsPressed){
+      const parent = e.target.parentElement;
+      let  nameContent = parent.querySelector('.card-name').textContent;
+      let  countryContent = parent.querySelector('.card-country').textContent;
+       
+      console.log(nameContent, countryContent);
+    }
+
 
 })
 
