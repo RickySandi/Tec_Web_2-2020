@@ -8,12 +8,12 @@ const renderBreweries = (breweries) => {
     breweries.forEach(brewery =>{
         output+= `
         <div class="card mt-4 col-md-6 bg-ligt">
-         <div class="card-body">
+         <div class="card-body" data-id=${brewery.id}>
            <h5 class="card-title">Name: ${brewery.name}</h5>
            <h6 class="card-subtitle mb-2 text-muted">Country: ${brewery.country}</h6>
            <p class="card-text">id: ${brewery.id}</p>
-           <a href="#" class="card-link">Edit</a>
-           <a href="#" class="card-link">Delete</a>
+           <a href="#" class="card-link" id="edit-brewery">Edit</a>
+           <a href="#" class="card-link" id="delete-brewery">Delete</a>
          </div>
         </div>
         `;
@@ -23,7 +23,7 @@ const renderBreweries = (breweries) => {
 
 }
 
-const url= 'http://localhost:5000/api/breweries/'
+const url= 'http://localhost:5000/api/breweries'
 
 //Get - Read the Breweries 
 //Method: GET  
@@ -31,13 +31,32 @@ fetch(url)
     .then(res => res.json())
     .then(data => renderBreweries(data))
 
+breweriesList.addEventListener('click', (e) =>{
+    e.preventDefault();
+    let delButtonIsPressed = e.target.id == 'delete-brewery';
+    let editButtonIsPressed = e.target.id == 'edit-brewery';
+
+    let id = e.target.parentElement.dataset.id; 
+
+    //Delete - Remove the existing Brewery 
+    //method: DELETE
+    if(delButtonIsPressed){
+        fetch(`${url}/${id}`,{
+         method: 'DELETE', 
+        })
+          .then(res => res.json())
+          .then(data => location.reload())
+    }
+
+})
+
+
 // Create - Insert new Brewery 
 //Method: POST 
 
 addBreweryForm.addEventListener('submit', (e) => {
     e.preventDefault(); 
-    console.log(nameValue.value);
-
+    
     fetch(url, {
         method: 'POST', 
         headers: {

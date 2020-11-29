@@ -78,11 +78,11 @@ namespace BreweryAPI.Controllers
         }
 
         [HttpDelete("{breweryId:int}")]
-        public ActionResult<DeleteModel> DeleteBrewery(int companyId)
+        public ActionResult<DeleteModel> DeleteBrewery(int breweryId)
         {
             try
             {
-                return Ok(_breweryService.DeleteBrewery(companyId));
+                return Ok(_breweryService.DeleteBrewery(breweryId));
             }
             catch (NotFoundOperationException ex)
             {

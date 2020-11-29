@@ -11,7 +11,8 @@ using BreweryAPI.Services;
 
 namespace BreweryAPI.Controllers
 {
-    [Route("api/test/{breweryId:int}/[controller]")]
+    //[Route("api/test/{breweryId:int}/[controller]")]
+    [Route("api/[controller]")]
     public class BeersController : ControllerBase
     {
         private IBeersService _beerService;

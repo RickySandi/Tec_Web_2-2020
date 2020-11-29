@@ -60,7 +60,7 @@ namespace BreweryAPI.Data.Repository
 
         public bool DeleteBrewery(int breweryId)
         {
-            var breweryToDelete = breweries.FirstOrDefault(c => c.Id == breweryId);
+            var breweryToDelete = breweries.SingleOrDefault(c => c.Id == breweryId);
             breweries.Remove(breweryToDelete);
             return true;
         }
