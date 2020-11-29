@@ -2,7 +2,8 @@ const breweriesList = document.querySelector('.breweries-list');
 const addBreweryForm = document.querySelector('.add-brewery-form'); 
 const nameValue = document.getElementById('name-value');
 const countryValue = document.getElementById('country-value');
-const btnSubmit = document.querySelector('.btn')
+const btnSubmit = document.querySelector('.btn');
+const btnFilter = document.querySelector('.filter');
 let output = ''; 
 
 const renderBreweries = (breweries) => {
@@ -24,21 +25,60 @@ const renderBreweries = (breweries) => {
 
 }
 
+// const filteredBreweries = (filter) =>{
+//     let filtereData=breweriesList.filter(function(element, filter){ return element.country =filter;})
+//     filtereData.innerHTML = output; 
+
+// }
+
+
+
 const url= 'http://localhost:5000/api/breweries'
+const byCountry = 'http://localhost:5000/api/breweries/FilterBreweryByCountry?beerCountry='
+
+//const filterd = false; 
 
 //Get - Read the Breweries  //<p class="card-text">${brewery.id}</p>
 //
 //Method: GET  
 fetch(url)
+
     .then(res => res.json())
     .then(data => renderBreweries(data))
+    //then(data => filteredBreweries("Germany"))
+ 
+//Get - Filter Brewery by Country 
+//Method: GET 
+
+ 
+btnFilter.addEventListener('click', (e) =>{
+    //debugger;
+        e.preventDefault();
+        let country = e.target.parentElement.dataset.country;
+        console.log(countryValue.value);
+        const filter = countryValue.value; 
+
+       const query = byCountry+filter; 
+       
+
+        //console.log('brewery updated');
+        fetch(query)
+    
+            .then(res => res.json())
+
+            .then(data => filteredBreweries(data, filter))
+            .then(() => location.reload())
+            //filtereData=breweriesList.filter(function(element, filter){ return element.country =filter;})
+    })
+
 
 breweriesList.addEventListener('click', (e) =>{
     e.preventDefault();
     let delButtonIsPressed = e.target.id == 'delete-brewery';
     let editButtonIsPressed = e.target.id == 'edit-brewery';
 
-    let id = e.target.parentElement.dataset.id; 
+    let id = e.target.parentElement.dataset.id;
+    console.log(id);  
 
     //Delete - Remove the existing Brewery 
     //method: DELETE
@@ -56,7 +96,7 @@ breweriesList.addEventListener('click', (e) =>{
           .then(res => res.json())
           .then(() => location.reload())
     }
-
+    //debugger; 
     if(editButtonIsPressed){
       const parent = e.target.parentElement;
       let  nameContent = parent.querySelector('.card-name').textContent;
@@ -69,26 +109,25 @@ breweriesList.addEventListener('click', (e) =>{
 
     //Update - update the existing brewery 
     //Method: PATCH
-    debugger; 
+    
     btnSubmit.addEventListener('click', (e) =>{
         e.preventDefault();
         //console.log('brewery updated');
-        fetch(`${url}/${id}`, {
+        fetch(`${url}/${id}`,{
             method: 'PATCH',
             headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                name: nameValue.value,
-                country: countryValue.value 
-            }) 
-        })
-            .then(res => res.json())
-            .then(() => location.reload())
-        
+               'Content-Type': 'application/json'
+           },
+           body: JSON.stringify({
+               name: nameValue.value,
+               country: countryValue.value
+           })  
+         })
+             .then(res => res.json())
+             .then(() => location.reload())     
     })
-
-});
+    
+}); 
 
 
 // Create - Insert new Brewery 
