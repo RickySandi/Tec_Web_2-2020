@@ -2,15 +2,18 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="BreweryAPI/Data/Repository/LibraryRepository.cs">
     <Files>
       <File FileName="BreweryAPI/Data/Entities/BeerEntity.cs" Line="22" Column="4" />
-      <File FileName="BreweryAPI/Data/Entities/BreweryEntity.cs" Line="1" Column="1" />
-      <File FileName="BreweryAPI/Services/IBeersService.cs" Line="21" Column="2" />
-      <File FileName="BreweryAPI/Services/BeersService.cs" Line="1" Column="1" />
-      <File FileName="BreweryAPI/Services/BreweriesService.cs" Line="74" Column="13" />
-      <File FileName="BreweryAPI/Data/Repository/ILibraryRepository.cs" Line="17" Column="14" />
-      <File FileName="BreweryAPI/Controllers/BreweriesController.cs" Line="113" Column="83" />
-      <File FileName="BreweryAPI/Data/Repository/LibraryRepository.cs" Line="100" Column="10" />
-      <File FileName="BreweryAPI/Controllers/BeersController.cs" Line="1" Column="1" />
-      <File FileName="BreweryAPI/Services/IBreweriesService.cs" Line="1" Column="1" />
+      <File FileName="BreweryAPI/Data/Entities/BreweryEntity.cs" />
+      <File FileName="BreweryAPI/Services/IBeersService.cs" />
+      <File FileName="BreweryAPI/Services/BeersService.cs" />
+      <File FileName="BreweryAPI/Services/BreweriesService.cs" />
+      <File FileName="BreweryAPI/Data/Repository/ILibraryRepository.cs" />
+      <File FileName="BreweryAPI/Controllers/BreweriesController.cs" />
+      <File FileName="BreweryAPI/Data/Repository/LibraryRepository.cs" Line="39" Column="1" />
+      <File FileName="BreweryAPI/Controllers/BeersController.cs" />
+      <File FileName="BreweryAPI/Services/IBreweriesService.cs" />
+      <File FileName="BreweryAPI/Models/DeleteModel.cs" />
+      <File FileName="BreweryAPI/Startup.cs" />
+      <File FileName="BreweryAPI/Models/BreweryModel.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

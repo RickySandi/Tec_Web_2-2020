@@ -34,6 +34,7 @@ body {
     height: 900px;
     color: #ffffff;
 
+
   }
 
   .bg-3 { 
@@ -54,7 +55,8 @@ body {
     height: 2500px;
   }
   .h3{
-    color: #000;
+    color: #000; 
+    
   }
   .container-fluid {
     padding-top: 70px;

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breweries Fetch API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-3"></div>
+         <div class="col-md-6"></div>
+           <h3>Add New Brewery</h3>
+           <form action="add-breer-form">
+            <div class="form-group">
+             <label for="title">Title</label>
+             <input type="text" class="form-control" id="title-value">
+            </div>
+            <div class ="form-group">
+             <label for="body">Content</label>
+             <textarea type="text" class="form-control" id="body-value"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Brewery</button>
+          </form>
+         </div>
+        </div>
+
+
+        <div class="breweries-list row"></div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
