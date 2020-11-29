@@ -1,4 +1,7 @@
-const breweriesList = document.querySelector('.breweries-list'); 
+const breweriesList = document.querySelector('.breweries-list');
+const addBreweryForm = document.querySelector('.add-brewery-form'); 
+const nameValue = document.getElementById('name-value');
+const countryValue = document.getElementById('country-value');
 let output = ''; 
 
 const renderBreweries = (breweries) => {
@@ -23,7 +26,33 @@ const renderBreweries = (breweries) => {
 const url= 'http://localhost:5000/api/breweries/'
 
 //Get - Read the Breweries 
-//Method: Get 
+//Method: GET  
 fetch(url)
     .then(res => res.json())
     .then(data => renderBreweries(data))
+
+// Create - Insert new Brewery 
+//Method: POST 
+
+addBreweryForm.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+    console.log(nameValue.value);
+
+    fetch(url, {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: nameValue.value,
+            country: countryValue.value
+        }) 
+    })
+        .then(res => res.json())
+        .then(data => {
+          const dataArray =[]; 
+          dataArray.push(data);
+          renderBreweries(dataArray);  
+        })
+    // console.log('Form submited'); 
+})
