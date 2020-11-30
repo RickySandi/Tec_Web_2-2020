@@ -121,10 +121,10 @@ breweriesList.addEventListener('click', (e) =>{
    
     btnSubmit.addEventListener('click', (e) =>{
         debugger;
-        let id_2 = id;
+        let id_2 = parseInt(id);
         console.log(id_2); 
-        let id_3 = parseInt(id_2);
-        console.log(id_3); 
+        // let id_3 = parseInt(id_2);
+        // console.log(id_3); 
 
         e.preventDefault();
         //console.log('brewery updated');
@@ -136,7 +136,7 @@ breweriesList.addEventListener('click', (e) =>{
            },
            body: JSON.stringify({
                //id: idContent, 
-               id: id_3, 
+               id: id_2, 
                name: nameValue.value,
                country: countryValue.value
                
