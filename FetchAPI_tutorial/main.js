@@ -73,6 +73,7 @@ btnFilter.addEventListener('click', (e) =>{
 
 
 breweriesList.addEventListener('click', (e) =>{
+    //debugger;
     e.preventDefault();
     let delButtonIsPressed = e.target.id == 'delete-brewery';
     let editButtonIsPressed = e.target.id == 'edit-brewery';
@@ -96,11 +97,13 @@ breweriesList.addEventListener('click', (e) =>{
           .then(res => res.json())
           .then(() => location.reload())
     }
-    //debugger; 
+    debugger; 
     if(editButtonIsPressed){
       const parent = e.target.parentElement;
       let  nameContent = parent.querySelector('.card-name').textContent;
       let  countryContent = parent.querySelector('.card-country').textContent;
+
+    //   console.log(nameContent, countryContent); 
 
       nameValue.value = nameContent;
       countryValue.value = countryContent; 
@@ -110,21 +113,25 @@ breweriesList.addEventListener('click', (e) =>{
     //Update - update the existing brewery 
     //Method: PATCH
     
+   
     btnSubmit.addEventListener('click', (e) =>{
+        //debugger; 
         e.preventDefault();
         //console.log('brewery updated');
+
         fetch(`${url}/${id}`,{
-            method: 'PATCH',
+            method: 'PUT',
             headers: {
                'Content-Type': 'application/json'
            },
            body: JSON.stringify({
                name: nameValue.value,
-               country: countryValue.value
-           })  
-         })
-             .then(res => res.json())
-             .then(() => location.reload())     
+               country: countryValue.value, 
+               id: id
+            })  
+        })
+            .then(res => res.json())
+            .then(() => location.reload())     
     })
     
 }); 
