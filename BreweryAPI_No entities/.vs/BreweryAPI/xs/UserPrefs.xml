@@ -32,7 +32,6 @@
                   <Node name="LibraryRepository.cs" selected="True" />
                 </Node>
               </Node>
-              <Node name="Exceptions" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />

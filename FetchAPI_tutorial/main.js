@@ -81,6 +81,8 @@ breweriesList.addEventListener('click', (e) =>{
     let id = e.target.parentElement.dataset.id;
     console.log(id);  
 
+   
+
     //Delete - Remove the existing Brewery 
     //method: DELETE
     if(delButtonIsPressed){
@@ -97,9 +99,12 @@ breweriesList.addEventListener('click', (e) =>{
           .then(res => res.json())
           .then(() => location.reload())
     }
-    debugger; 
+    //debugger; 
     if(editButtonIsPressed){
       const parent = e.target.parentElement;
+
+      //let  valueContent = parent.querySelector('.card-name').textContent;
+      //let  idContent = 1; 
       let  nameContent = parent.querySelector('.card-name').textContent;
       let  countryContent = parent.querySelector('.card-country').textContent;
 
@@ -115,7 +120,12 @@ breweriesList.addEventListener('click', (e) =>{
     
    
     btnSubmit.addEventListener('click', (e) =>{
-        //debugger; 
+        debugger;
+        let id_2 = id;
+        console.log(id_2); 
+        let id_3 = parseInt(id_2);
+        console.log(id_3); 
+
         e.preventDefault();
         //console.log('brewery updated');
 
@@ -125,9 +135,11 @@ breweriesList.addEventListener('click', (e) =>{
                'Content-Type': 'application/json'
            },
            body: JSON.stringify({
+               //id: idContent, 
+               id: id_3, 
                name: nameValue.value,
-               country: countryValue.value, 
-               id: id
+               country: countryValue.value
+               
             })  
         })
             .then(res => res.json())
