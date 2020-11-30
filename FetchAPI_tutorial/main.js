@@ -33,8 +33,7 @@ const filteredBreweries = (breweries) =>{
            <h5 class="card-name">${brewery.name}</h5>
            <h6 class="card-country">${brewery.country}</h6>
            
-           <a href="#" class="card-link" id="edit-brewery">Edit</a>
-           <a href="#" class="card-link" id="delete-brewery">Delete</a>
+
          </div>
         </div>
         `;
@@ -78,7 +77,7 @@ btnFilter.addEventListener('click', (e) =>{
         fetch(query)
     
             .then(res => res.json())
-            .then(data => renderBreweries(data, filter))
+            .then(data => filteredBreweries(data, filter))
             //.then(() => location.reload())
             //filtereData=breweriesList.filter(function(element, filter){ return element.country =filter;})
     })
