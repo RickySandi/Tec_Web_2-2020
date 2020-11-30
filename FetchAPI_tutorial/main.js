@@ -25,11 +25,24 @@ const renderBreweries = (breweries) => {
 
 }
 
-// const filteredBreweries = (filter) =>{
-//     let filtereData=breweriesList.filter(function(element, filter){ return element.country =filter;})
-//     filtereData.innerHTML = output; 
+const filteredBreweries = (breweries) =>{
+    breweries.forEach(brewery =>{
+        output+= `
+        <div class="card mt-4 col-md-6 bg-ligt">
+         <div class="card-body" data-id=${brewery.id}>
+           <h5 class="card-name">${brewery.name}</h5>
+           <h6 class="card-country">${brewery.country}</h6>
+           
+           <a href="#" class="card-link" id="edit-brewery">Edit</a>
+           <a href="#" class="card-link" id="delete-brewery">Delete</a>
+         </div>
+        </div>
+        `;
+       
+    });
+    breweriesList.innerHTML= output;
 
-// }
+}
 
 
 
@@ -45,7 +58,7 @@ fetch(url)
 
     .then(res => res.json())
     .then(data => renderBreweries(data))
-    //then(data => filteredBreweries("Germany"))
+    //.then(data => filteredBreweries(data))
  
 //Get - Filter Brewery by Country 
 //Method: GET 
@@ -65,9 +78,8 @@ btnFilter.addEventListener('click', (e) =>{
         fetch(query)
     
             .then(res => res.json())
-
-            .then(data => filteredBreweries(data, filter))
-            .then(() => location.reload())
+            .then(data => renderBreweries(data, filter))
+            //.then(() => location.reload())
             //filtereData=breweriesList.filter(function(element, filter){ return element.country =filter;})
     })
 
@@ -121,8 +133,10 @@ breweriesList.addEventListener('click', (e) =>{
    
     btnSubmit.addEventListener('click', (e) =>{
         debugger;
+
         let id_2 = parseInt(id);
-        console.log(id_2); 
+        console.log(id_2);
+
         // let id_3 = parseInt(id_2);
         // console.log(id_3); 
 
@@ -134,8 +148,7 @@ breweriesList.addEventListener('click', (e) =>{
             headers: {
                'Content-Type': 'application/json'
            },
-           body: JSON.stringify({
-               //id: idContent, 
+           body: JSON.stringify({ 
                id: id_2, 
                name: nameValue.value,
                country: countryValue.value
