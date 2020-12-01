@@ -22,7 +22,7 @@ namespace BreweryAPI.Data.Repository
         {
             new BeerModel(){ Id = 1, Name = "Hefe-Weissbier", Type = "Weissbier", alcoholPorcentage = 5.5m, Price = 2.5m, soldAmount =0, breweryId =1 },
             new BeerModel(){ Id = 2, Name = "Munchner Hell", Type = "Lager", alcoholPorcentage = 4.9m, Price = 3.2m,soldAmount =15, breweryId =1 },
-            new BeerModel(){ Id = 3, Name = "Hefe-Weissbier Dunkel", Type = "Weissbier", alcoholPorcentage = 5.3m, Price = 2.0m, soldAmount =8, breweryId =1 },
+            new BeerModel(){ Id = 3, Name = "Hefe-Weissbi   er Dunkel", Type = "Weissbier", alcoholPorcentage = 5.3m, Price = 2.0m, soldAmount =8, breweryId =1 },
 
             new BeerModel(){ Id = 4, Name = "Flensburger Pilsener", Type = "Pilsener", alcoholPorcentage = 4.8m, Price = 2.5m, soldAmount =3, breweryId =2 },
             new BeerModel(){ Id = 5, Name = "Flensburger Gold", Type = "Pilsener", alcoholPorcentage = 4.8m, Price = 2.5m,soldAmount =2, breweryId =2 },

@@ -8,7 +8,7 @@
       <File FileName="BreweryAPI/Services/BreweriesService.cs" />
       <File FileName="BreweryAPI/Data/Repository/ILibraryRepository.cs" />
       <File FileName="BreweryAPI/Controllers/BreweriesController.cs" />
-      <File FileName="BreweryAPI/Data/Repository/LibraryRepository.cs" Line="1" Column="1" />
+      <File FileName="BreweryAPI/Data/Repository/LibraryRepository.cs" Line="25" Column="61" />
       <File FileName="BreweryAPI/Controllers/BeersController.cs" />
       <File FileName="BreweryAPI/Services/IBreweriesService.cs" />
       <File FileName="BreweryAPI/Models/DeleteModel.cs" />
