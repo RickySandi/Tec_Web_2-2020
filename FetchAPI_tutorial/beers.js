@@ -64,13 +64,17 @@ const notSoldBeers = 'NotSoldBeers'
 //
 //Method: GET
 //debugger; 
-let selectedOption = document.getElementById('brewery-value').value;
-console.log(selectedOption);
-fetch(`${url}/${selectedOption}/${notSoldBeers}`)
 
-    .then(res => res.json())
-    .then(data => rednerBeers(data))
-    //.then(data => filteredBreweries(data))
+//DESCOMENTAR
+
+// let selectedOption = document.getElementById('brewery-value').value;
+// console.log(selectedOption);
+// fetch(`${url}/${selectedOption}/${notSoldBeers}`)
+
+//     .then(res => res.json())
+//     .then(data => rednerBeers(data))
+//     //.then(data => filteredBreweries(data))
+
 
 
 btnFilter.addEventListener('click', (e) =>{
