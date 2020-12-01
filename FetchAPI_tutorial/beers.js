@@ -56,15 +56,17 @@ const filteredBeers = (beers) =>{
 
 const prueba= 'http://localhost:5000/api/beers/2'
 const url = 'http://localhost:5000/api/beers'
-const notSoldBeers = 'http://localhost:5000/api/beers/2/NotSoldBeers'
+const notSoldBeers = 'NotSoldBeers'
 
 //const filterd = false; 
 
 //Get - Read the Breweries  //<p class="card-text">${brewery.id}</p>
 //
 //Method: GET
+//debugger; 
 let selectedOption = document.getElementById('brewery-value').value;
-fetch(`${url}/${selectedOption}`)
+console.log(selectedOption);
+fetch(`${url}/${selectedOption}/${notSoldBeers}`)
 
     .then(res => res.json())
     .then(data => rednerBeers(data))
@@ -78,7 +80,7 @@ btnFilter.addEventListener('click', (e) =>{
         console.log(selectedOption);    
        
         //console.log('brewery updated');
-        fetch(`${url}/${selectedOption}`)
+        fetch(`${url}/${selectedOption}/${notSoldBeers}`)
     
             .then(res => res.json())
             .then(data => filteredBeers(data))
