@@ -11,17 +11,19 @@
     <div class="container">
         <div class="row mt-3"></div>
          <div class="col-md-6"></div>
-            <div class="dropdown">
-                <h4>Select a Brewery to see the not sold beers</h4>
-                <button class="dropbtn">Breweries</button>
-                <div class="dropdown-content">
-                  <a href="#">Paulaner</a>          <!-- href link a la pagina. Aniadir id -->
-                  <a href="#">Flensburger</a>
-                  <a href="#">Huari</a>
-            </div>
-          </div>
-           <h3>Add New Beer</h3>
+            <h3>Select a Brewery to filter not sold beers</h3>
+            <label>Select list</label>
+            <select id = "myList">
+              <option value = "1">one</option>
+              <option value = "2">two</option>
+              <option value = "3">three</option>
+              <option value = "4">four</option>
+            </select>
+            <form class="filter-beer-form">
+                <button type="submit" class="filter">Not sold Beers</button>
+            </form>
            <form class="add-beer-form">
+           <h3>Add New Beer</h3>
            <!-- <div class ="form-group">
              <label for="id">id</label>
              <textarea type="text" class="form-control" id="id-value"></textarea> 
@@ -44,9 +46,7 @@
                </div>
             <button type="submit" class="btn btn-primary">Add Beer</button>
           </form>
-          <form class="filter-beer-form">
-           <button type="submit" class="filter">Not sold Beers</button>
-          </form>
+
          </div>
         </div>
 
