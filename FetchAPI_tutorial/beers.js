@@ -98,7 +98,7 @@ btnFilter.addEventListener('click', (e) =>{
         fetch(notSoldBeers)
     
             .then(res => res.json())
-            .then(data => rednerBeers(data))
+            .then(data => filteredBeers(data))
             //.then(() => location.reload())
             //filtereData=beersList.filter(function(element, filter){ return element.country =filter;})
     })
