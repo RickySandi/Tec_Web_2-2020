@@ -6,6 +6,8 @@ const typeValue = document.getElementById('type-value');
 const alcoholPorcentageValue = document.getElementById('alcoholPorcetage-value');
 const priceValue = document.getElementById('price-value');
 
+
+
 const btnSubmit = document.querySelector('.btn');
 const btnFilter = document.querySelector('.filter');
 let output = ''; 
@@ -41,7 +43,6 @@ const filteredBeers = (beers) =>{
            <h6 class="card-alcoholPorcentage">${beer.alcoholPorcentage}</h6>
            <h6 class="card-price">${beer.price}</h6>
            
-
          </div>
         </div>
         `;
@@ -53,20 +54,41 @@ const filteredBeers = (beers) =>{
 
 
 
-const url= 'http://localhost:5000/api/beers/2'
+const prueba= 'http://localhost:5000/api/beers/2'
+const url = 'http://localhost:5000/api/beers'
 const notSoldBeers = 'http://localhost:5000/api/beers/2/NotSoldBeers'
 
 //const filterd = false; 
 
 //Get - Read the Breweries  //<p class="card-text">${brewery.id}</p>
 //
-//Method: GET  
-fetch(url)
+//Method: GET
+let selectedOption = document.getElementById('brewery-value').value;
+fetch(`${url}/${selectedOption}`)
 
     .then(res => res.json())
     .then(data => rednerBeers(data))
     //.then(data => filteredBreweries(data))
+
+
+btnFilter.addEventListener('click', (e) =>{
+    //debugger;
+        e.preventDefault();
+        let selectedOption = document.getElementById('brewery-value').value;
+        console.log(selectedOption);    
+       
+        //console.log('brewery updated');
+        fetch(`${url}/${selectedOption}`)
+    
+            .then(res => res.json())
+            .then(data => filteredBeers(data))
+            //.then(() => location.reload())
+            //filtereData=beersList.filter(function(element, filter){ return element.country =filter;})
+    })
+
+
  
+
 //Get - Filter NotSoldBeers
 //Method: GET 
 
@@ -90,18 +112,8 @@ fetch(url)
 //             //filtereData=beersList.filter(function(element, filter){ return element.country =filter;})
 //     })
 
-btnFilter.addEventListener('click', (e) =>{
-    //debugger;
-        e.preventDefault();
-       
-        //console.log('brewery updated');
-        fetch(notSoldBeers)
-    
-            .then(res => res.json())
-            .then(data => filteredBeers(data))
-            //.then(() => location.reload())
-            //filtereData=beersList.filter(function(element, filter){ return element.country =filter;})
-    })
+
+
 
 
 beersList.addEventListener('click', (e) =>{
@@ -196,7 +208,7 @@ beersList.addEventListener('click', (e) =>{
 addBeerForm.addEventListener('submit', (e) => {
     e.preventDefault(); 
     
-    fetch(url, {
+    fetch(postBeer, {  //url 
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json'
