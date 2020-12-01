@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breweries Fetch API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-3"></div>
+         <div class="col-md-6"></div>
+           <h3>Add New Brewery</h3>
+           <form class="add-brewery-form">
+           <!-- <div class ="form-group">
+             <label for="id">id</label>
+             <textarea type="text" class="form-control" id="id-value"></textarea> 
+            </div> -->
+            <div class="form-group">
+             <label for="name">Name</label>
+             <input type="text" class="form-control" id="name-value">
+            </div>
+            <div class ="form-group">
+             <label for="country">Country</label>
+             <textarea type="text" class="form-control" id="country-value"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Brewery</button>
+          </form>
+          <form class="filter-brewery-form">
+           <button type="submit" class="filter">Filter Brewery</button>
+          </form>
+         </div>
+        </div>
+
+        <div class="breweries-list row"></div>
+        
+        <form class="options-form" action="index.html">
+          <button type="submit" class="options">Back to options</button>
+        </form>
+    </div>
+    
+    <script src="breweries.js"></script>
+</body>
+</html>
