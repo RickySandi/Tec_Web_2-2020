@@ -14,46 +14,24 @@
             <h3>Select a Brewery to filter not sold beers</h3>
             <label>Select list</label>
             <select id = "brewery-value">
-              <option value = "1">Paulaner</option>
-              <option value = "2">Flensburger</option>
-              <option value = "3">Hauri</option>
+              <option value = "1" id="brewery-value">Paulaner</option>
+              <option value = "2" id="brewery-value">Flensburger</option>
+              <option value = "3" id="brewery-value">Hauri</option>
             </select>
             <form class="filter-beer-form">
                 <button type="submit" class="filter">Not sold Beers</button>
             </form>
-           <form class="add-beer-form">
-           <h3>Add New Beer</h3>
-           <!-- <div class ="form-group">
-             <label for="id">id</label>
-             <textarea type="text" class="form-control" id="id-value"></textarea> 
-            </div> -->
-            <div class="form-group">
-             <label for="name">Name</label>
-             <input type="text" class="form-control" id="name-value">
-            </div>
-            <div class ="form-group">
-             <label for="type">Type</label>
-             <textarea type="text" class="form-control" id="type-value"></textarea>
-            </div>
-            <div class ="form-group">
-                <label for="type">Alcohol Porcentage</label>
-                <textarea type="text" class="form-control" id="alcoholPorcetage-value"></textarea>
-            </div>
-            <div class ="form-group">
-                <label for="type">Price</label>
-                <textarea type="text" class="form-control" id="price-value"></textarea>
-               </div>
-            <button type="submit" class="btn btn-primary">Add Beer</button>
-          </form>
+            <form class="options-form" action="index.html">
+                <button type="submit" class="options">Back to options</button>
+            </form>
+  
 
          </div>
         </div>
 
 
         <div class="beers-list row"></div>
-        <form class="options-form" action="index.html">
-            <button type="submit" class="options">Back to options</button>
-        </form>
+
     </div>
     
     <script src="beers.js"></script>

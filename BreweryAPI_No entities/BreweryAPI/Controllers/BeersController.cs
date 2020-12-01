@@ -56,7 +56,7 @@ namespace BreweryAPI.Controllers
             }
         }
 
-        [HttpPost]
+       
         public ActionResult<BeerModel> CreateBeer(int breweryId, [FromBody] BeerModel beer)
         {
             try

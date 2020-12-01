@@ -1,5 +1,5 @@
 const beersList = document.querySelector('.beers-list');
-const addBeerForm = document.querySelector('.add-beer-form'); 
+const addBeerForm = document.querySelector('.filter-beer-form'); 
 
 const nameValue = document.getElementById('name-value');
 const typeValue = document.getElementById('type-value');
@@ -32,6 +32,13 @@ const rednerBeers = (beers) => {
     beersList.innerHTML= output; 
 
 }
+// function matchedId(beersList, breweryId) {
+//     beersList.filter(beersList.breweryId == breweryId);
+//   }
+
+// function myFunction(beersList) {
+//     beersList.filter(matchedId);
+//   }
 
 const filteredBeers = (beers) =>{
     beers.forEach(beer =>{
@@ -57,6 +64,7 @@ const filteredBeers = (beers) =>{
 const prueba= 'http://localhost:5000/api/beers/2'
 const url = 'http://localhost:5000/api/beers'
 const notSoldBeers = 'NotSoldBeers'
+const urlLimpio = 'http://localhost:5500/beers.html?'
 
 //const filterd = false; 
 
@@ -65,11 +73,13 @@ const notSoldBeers = 'NotSoldBeers'
 //Method: GET
 //debugger; 
 
-//DESCOMENTAR
+
 
 // let selectedOption = document.getElementById('brewery-value').value;
 // console.log(selectedOption);
-// fetch(`${url}/${selectedOption}/${notSoldBeers}`)
+
+//REVISAR 
+// fetch(urlLimpio)
 
 //     .then(res => res.json())
 //     .then(data => rednerBeers(data))
@@ -199,6 +209,7 @@ beersList.addEventListener('click', (e) =>{
                alcoholPorcentage: alcoholPorcentageValue.value,
                price: priceValue.value
                
+               
             })  
         })
             .then(res => res.json())
@@ -223,7 +234,9 @@ addBeerForm.addEventListener('submit', (e) => {
             name: nameValue.value,
             type: typeValue.value,
             alcoholPorcentage: alcoholPorcentageValue.value,
-            price: priceValue.value
+            price: priceValue.value,
+            breweryId: 1
+
         }) 
     })
         .then(res => res.json())

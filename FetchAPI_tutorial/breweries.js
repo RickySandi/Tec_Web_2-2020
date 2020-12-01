@@ -131,7 +131,7 @@ breweriesList.addEventListener('click', (e) =>{
     
    
     btnSubmit.addEventListener('click', (e) =>{
-        debugger;
+        //debugger;
 
         let id_2 = parseInt(id);
         console.log(id_2);
