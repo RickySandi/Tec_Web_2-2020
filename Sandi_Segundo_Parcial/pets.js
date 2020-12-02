@@ -7,8 +7,7 @@ const btnDogsForm = document.querySelector('.dogs');
 const nameValue = document.getElementById('name-value');
 const typeValue = document.getElementById('type-value');
 const adoptedValue = document.getElementById('adopted-value');
-// const btnSubmit = document.querySelector('.btn');
-// const btnFilter = document.querySelector('.filter');
+
 let output = ''; 
 
 const renderPets = (pets) => {
@@ -33,13 +32,26 @@ const renderPets = (pets) => {
 
 }
 
+// function getCatsOrDogs(petsList, criteria){  //Funcion para guardar en una lista cats o dogs 
+    
+//     var index;
+//     const petsArray =[]; 
+    
+//     for (index = 0; index < petsList.length; ++index) {
+//         if(petsList[index].type == criteria){
+//             petsArray.push(petsList[index]);
+//         }   
+//     }
+//     return petsArray; 
+// }
+
 const url = 'https://localhost:5001/api/pets'
 
 fetch(url)
 
     .then(res => res.json())
     .then(data => renderPets(data))
-    //.then(data => filteredBreweries(data))
+  
 
 {/* <h6 class="card-isadopted">${pet.isadopted}</h6> */}
 
@@ -50,6 +62,7 @@ fetch(url)
 
 addPetForm.addEventListener('submit', (e) => {
     e.preventDefault(); 
+    alert("New pet added");
     
     fetch(url, {
         method: 'POST', 
@@ -80,8 +93,7 @@ btnCatsForm.addEventListener('click', (e) =>{
     
             .then(res => res.json())
             .then(data => renderPets(data))
-            //.then(() => location.reload())
-            //filtereData=beersList.filter(function(element, filter){ return element.country =filter;})
+            
     })
 
 btnCatsForm.addEventListener('click', (e) =>{
@@ -93,6 +105,5 @@ btnCatsForm.addEventListener('click', (e) =>{
     
             .then(res => res.json())
             .then(data => renderPets(data))
-            //.then(() => location.reload())
-            //filtereData=beersList.filter(function(element, filter){ return element.country =filter;})
+         
     })

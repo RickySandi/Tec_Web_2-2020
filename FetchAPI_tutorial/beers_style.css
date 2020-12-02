@@ -36,3 +36,19 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .beers-headers{
+    background-color:#DC7633; 
+    
+  }
+  .beers-filter-buttons{
+    display:inline-block;
+    border-radius: 12px;
+  }
+  #beer-buttons{
+    border-radius: 12px;
+  }
+  #beer-buttons:hover{
+    background-color: #B2BABB; 
+    color: black;
+  }

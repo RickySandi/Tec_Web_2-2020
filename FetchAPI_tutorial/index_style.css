@@ -20,6 +20,18 @@ body{
 
 #btnBreweries , #btnBeers{
     display:inline-block;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    height:40px;
+        
+      
+     
 }
+
+#btnBreweries:hover, #btnBeers:hover{
+    background-color: #d4ac0d; 
+    color: black;
+  }
 
 

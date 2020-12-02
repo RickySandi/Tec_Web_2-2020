@@ -1,0 +1,8 @@
+#btnRegister, #btnShowCats, #btnShowDogs{
+    display:inline-block;
+}
+
+/* body{
+    background-image:url(pets.jpg);
+    height: 100%; 
+} */
