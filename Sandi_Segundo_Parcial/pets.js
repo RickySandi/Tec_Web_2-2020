@@ -3,6 +3,7 @@ const addPetForm = document.querySelector('.submit-form');
  
 const nameValue = document.getElementById('name-value');
 const typeValue = document.getElementById('type-value');
+const adoptedValue = document.getElementById('adopted-value');
 // const btnSubmit = document.querySelector('.btn');
 // const btnFilter = document.querySelector('.filter');
 let output = ''; 
@@ -17,7 +18,7 @@ const renderPets = (pets) => {
         <div class="card mt-4 col-md-6 bg-ligt">
          <div class="card-body" data-id=${pet.id}>
            <h5 class="card-name">${pet.name}</h5>
-           <h6 class="card-isadopted">${pet.isadopted}</h6>
+           <h6 class="card-isadopted">${pet.isAdopted}</h6>
            <h6 class="card-type">${pet.type}</h6>
            
          </div>
@@ -52,7 +53,8 @@ addPetForm.addEventListener('submit', (e) => {
         },
         body: JSON.stringify({
             name: nameValue.value,
-            type: typeValue.value
+            type: typeValue.value,
+            isAdopted: adoptedValue.value
         }) 
     })
         .then(res => res.json())
