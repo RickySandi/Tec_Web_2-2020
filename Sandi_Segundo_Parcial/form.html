@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Breweries Fetch API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
+    <div class="container">
+        <div class="row mt-3"></div>
+         <div class="col-md-6"></div>
+            <form class="add-brewery-form">
+            <h3>Register new Pet</h3>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name-value">
+              </div>
+              <select id = "type-value">
+                <option value = "1" id="type-value">Cat</option>
+                <option value = "2" id="type-value">Dog</option>
+            </select>
+            <div>
+                <form>
+                  <input type="checkbox" id="adopted" name="adopted" value="true">
+                  <label for="adopted"> Is adopted</label>
+                </form>
+            </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+            </form>
+        </div>
+    </div>
+
+        <div class="breweries-list row"></div>
+        
+        <form class="options-form" action="index.html">
+          <button type="submit" class="options">Return</button>
+        </form>
+    </div>
     
+    <!-- <script src="breweries.js"></script>  REVISAR-->
 </body>
 </html>
