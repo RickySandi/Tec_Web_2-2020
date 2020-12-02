@@ -1,7 +1,8 @@
 const petsList = document.querySelector('.pets-list');
-// const addBreweryForm = document.querySelector('.add-brewery-form'); 
-// const nameValue = document.getElementById('name-value');
-// const countryValue = document.getElementById('country-value');
+const addPetForm = document.querySelector('.submit-form');
+ 
+const nameValue = document.getElementById('name-value');
+const typeValue = document.getElementById('type-value');
 // const btnSubmit = document.querySelector('.btn');
 // const btnFilter = document.querySelector('.filter');
 let output = ''; 
@@ -37,3 +38,28 @@ fetch(url)
     //.then(data => filteredBreweries(data))
 
 {/* <h6 class="card-isadopted">${pet.isadopted}</h6> */}
+
+// Create - Insert new Pet 
+//Method: POST 
+
+addPetForm.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+    
+    fetch(url, {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: nameValue.value,
+            type: typeValue.value
+        }) 
+    })
+        .then(res => res.json())
+        .then(data => {
+          const dataArray =[]; 
+          dataArray.push(data);
+          renderPets(dataArray);  
+        })
+    // console.log('Form submited'); 
+})
