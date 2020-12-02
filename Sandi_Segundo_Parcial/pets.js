@@ -40,6 +40,8 @@ fetch(url)
 
 {/* <h6 class="card-isadopted">${pet.isadopted}</h6> */}
 
+//console.log(adoptedValue.value);
+
 // Create - Insert new Pet 
 //Method: POST 
 
@@ -53,8 +55,8 @@ addPetForm.addEventListener('submit', (e) => {
         },
         body: JSON.stringify({
             name: nameValue.value,
-            type: typeValue.value,
-            isAdopted: adoptedValue.value
+            type: typeValue.value
+            //isAdopted: adoptedValue.value
         }) 
     })
         .then(res => res.json())
