@@ -1,5 +1,8 @@
 const petsList = document.querySelector('.pets-list');
 const addPetForm = document.querySelector('.submit-form');
+
+const btnCatsForm = document.querySelector('.cats');
+const btnDogsForm = document.querySelector('.dogs');
  
 const nameValue = document.getElementById('name-value');
 const typeValue = document.getElementById('type-value');
@@ -67,3 +70,29 @@ addPetForm.addEventListener('submit', (e) => {
         })
     // console.log('Form submited'); 
 })
+
+btnCatsForm.addEventListener('click', (e) =>{
+    //debugger;
+        e.preventDefault();
+      
+        //console.log('brewery updated');
+        fetch(url)
+    
+            .then(res => res.json())
+            .then(data => renderPets(data))
+            //.then(() => location.reload())
+            //filtereData=beersList.filter(function(element, filter){ return element.country =filter;})
+    })
+
+btnCatsForm.addEventListener('click', (e) =>{
+    //debugger;
+        e.preventDefault();
+      
+        //console.log('brewery updated');
+        fetch(url)
+    
+            .then(res => res.json())
+            .then(data => renderPets(data))
+            //.then(() => location.reload())
+            //filtereData=beersList.filter(function(element, filter){ return element.country =filter;})
+    })
