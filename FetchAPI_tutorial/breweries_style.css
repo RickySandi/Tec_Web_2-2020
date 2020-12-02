@@ -1,3 +1,14 @@
 .container{
-    background:url('beer_3.jpg');
+    background-color: #EAEDED;
 }
+#brewry-buttons{
+    display:inline-block;
+    border-radius: 12px;
+    height:40px;
+}
+#brewry-buttons:hover{
+    background-color:  #B2BABB; 
+    color: black;
+}
+
+

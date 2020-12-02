@@ -52,3 +52,11 @@
     background-color: #B2BABB; 
     color: black;
   }
+
+  #beer-filter{
+    border-radius: 12px;
+  }
+  #beer-filter:hover{
+    background-color:#3498DB ; 
+    color: white;
+  }
