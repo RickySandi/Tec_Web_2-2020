@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "F8pc2nOIZC4JjwPU58ZqH+20t9SF5R2vfbey4FZUm4CYR5sI/GdnCqbN8RiebTLbb5SrZPY8tL+fGw7l6r1ogg==",
+  "dgSpecHash": "COEolDsqyth4dX7XX+3mGqNYrVzTEVoL3C8dq0sLlQiKxgThQxqc3l7HRCOMlhcurOwjqA2FdXeg6q571eNsCA==",
   "success": true,
   "projectFilePath": "/Users/ricky/Desktop/UCB/7._Septimo_Semestre/Tec_Web/repoTecWeb/BreweryAPI_No entities/BreweryAPI/BreweryAPI.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,8 @@
     "/Users/ricky/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.0.0/microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
     "/Users/ricky/.nuget/packages/microsoft.extensions.options/3.0.0/microsoft.extensions.options.3.0.0.nupkg.sha512",
     "/Users/ricky/.nuget/packages/microsoft.extensions.primitives/3.0.0/microsoft.extensions.primitives.3.0.0.nupkg.sha512",
-    "/Users/ricky/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512"
+    "/Users/ricky/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",
+    "/Users/ricky/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
   ],
   "logs": []
 }

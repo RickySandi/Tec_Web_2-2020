@@ -64,7 +64,7 @@ fetch(url)
 
  
 btnFilter.addEventListener('click', (e) =>{
-    //debugger;
+    debugger;
         e.preventDefault();
         let country = e.target.parentElement.dataset.country;
         console.log(countryValue.value);

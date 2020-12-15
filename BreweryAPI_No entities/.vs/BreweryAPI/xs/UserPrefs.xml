@@ -1,15 +1,15 @@
-﻿<Properties StartupConfiguration="{A5366315-8D9D-4DE3-94F1-6E6D5721F4BC}|BreweryAPI">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BreweryAPI/Controllers/BeersController.cs">
+﻿<Properties StartupConfiguration="{A5366315-8D9D-4DE3-94F1-6E6D5721F4BC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BreweryAPI/Services/BeersService.cs">
     <Files>
       <File FileName="BreweryAPI/Data/Entities/BeerEntity.cs" Line="22" Column="4" />
       <File FileName="BreweryAPI/Data/Entities/BreweryEntity.cs" />
       <File FileName="BreweryAPI/Services/IBeersService.cs" />
-      <File FileName="BreweryAPI/Services/BeersService.cs" />
+      <File FileName="BreweryAPI/Services/BeersService.cs" Line="1" Column="1" />
       <File FileName="BreweryAPI/Services/BreweriesService.cs" />
-      <File FileName="BreweryAPI/Data/Repository/ILibraryRepository.cs" />
+      <File FileName="BreweryAPI/Data/Repository/ILibraryRepository.cs" Line="1" Column="1" />
       <File FileName="BreweryAPI/Controllers/BreweriesController.cs" />
-      <File FileName="BreweryAPI/Data/Repository/LibraryRepository.cs" />
-      <File FileName="BreweryAPI/Controllers/BeersController.cs" Line="54" Column="14" />
+      <File FileName="BreweryAPI/Data/Repository/LibraryRepository.cs" Line="23" Column="133" />
+      <File FileName="BreweryAPI/Controllers/BeersController.cs" Line="92" Column="10" />
       <File FileName="BreweryAPI/Services/IBreweriesService.cs" />
       <File FileName="BreweryAPI/Models/DeleteModel.cs" />
       <File FileName="BreweryAPI/Startup.cs" />
@@ -25,16 +25,16 @@
         <State name="__root__">
           <Node name="BreweryAPI" expanded="True">
             <Node name="BreweryAPI" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="BeersController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True">
                 <Node name="Entities" expanded="True" />
                 <Node name="Repository" expanded="True" />
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Services" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="BeersService.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
